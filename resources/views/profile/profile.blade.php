@@ -13,8 +13,7 @@
                 <div style="background-image: url({{ asset('img/rsbk.jpg') }})"
                     class="relative overflow-hidden w-full h-[80vh] bg-cover bg-center bg-no-repeat mb-5">
                     <h1 class="carousel-text text-7xl ml-6 opacity-0 font-bold text-white absolute top-6 animate__animated">
-                        Teks Slide
-                        1gg
+                        Teks
                     </h1>
                 </div>
             </div>
