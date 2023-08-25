@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HistoryController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\HomeControler;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [HomeControler::class, 'Index']) -> name('home');
+Route::get('/profile', [ProfileController::class, 'showProfile']) -> name('profile');
+Route::get('/profile/history', [HistoryController::class, 'showHistory']) -> name('history');
