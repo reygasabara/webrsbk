@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HistoryController extends Controller
+class ProfileHistoryController extends Controller
 {
     public function showHistory() {
-        return view('profile.history', [
+        return view('profiles.history', [
             'title' => 'Profil',
             'submenu' => 'Sejarah',
         ]);

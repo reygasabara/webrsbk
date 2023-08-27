@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProfileController extends Controller
+class ProfilesController extends Controller
 {
-    public function showProfile() {
-        return view('profile.profile', [
+    public function showProfiles() {
+        return view('profiles.profiles', [
             'title' => 'Profil',
             'submenu' => null,
         ]);

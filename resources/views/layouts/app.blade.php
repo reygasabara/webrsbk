@@ -21,7 +21,7 @@
 
     {{-- animation --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     @yield('head')
 
@@ -82,7 +82,9 @@
     <script src="https://kit.fontawesome.com/2d9c139c31.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        window.addEventListener('load', function() {
+            AOS.init();
+        });
     </script>
 
     @yield('scripts')
