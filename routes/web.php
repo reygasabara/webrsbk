@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeControler;
 use App\Http\Controllers\ServicesController;
@@ -35,3 +37,26 @@ Route::get('/pelayanan', [ServicesController::class, 'showServices'])->name('ser
 Route::get('/pelayanan/rawat-jalan', [ServicesController::class, 'showOutpacient'])->name('outpacient');
 Route::get('/pelayanan/rawat-inap', [ServicesController::class, 'showInpacient'])->name('inpacient');
 Route::get('/pelayanan/penunjang', [ServicesController::class, 'showSupport'])->name('support');
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ROUTE BACKEND
+Route::middleware(['guest'])->group(function() {
+    Route::get('/login', [AuthController::class, 'index'])->name('login');
+    Route::post('/login', [AuthController::class, 'authenticate']);
+});
+
+Route::middleware(['auth'])->group(function () { 
+    Route::get('/logout', [AuthController::class, 'logout']);
+    Route::get('/dashboard', [DashboardController::class, 'index']);
+});
