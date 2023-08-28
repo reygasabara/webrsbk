@@ -34,3 +34,14 @@ Route::get('/pelayanan/rawat-inap', [ServicesController::class, 'showInpacient']
 Route::get('/pelayanan/penunjang', [ServicesController::class, 'showSupport'])->name('support');
 Route::get('/pasien/', [PatientInformationsController::class, 'showPatientInformations'])->name('patientInformations');
 Route::get('/pasien/informasi-tempat-tidur', [PatientInformationsController::class, 'showBedInformation'])->name('bedInformation');
+
+// ROUTE BACKEND
+Route::middleware(['guest'])->group(function() {
+    Route::get('/login', [AuthController::class, 'index'])->name('login');
+    Route::post('/login', [AuthController::class, 'authenticate']);
+});
+
+Route::middleware(['auth'])->group(function () { 
+    Route::get('/logout', [AuthController::class, 'logout']);
+    Route::get('/dashboard', [DashboardController::class, 'index']);
+});
