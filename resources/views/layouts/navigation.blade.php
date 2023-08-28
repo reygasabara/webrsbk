@@ -58,18 +58,18 @@
                     <div class="absolute w-56 h-10"></div>
                     <ul class=" absolute rounded-md shadow-md py-3 px-5 w-56 bg-white top-10  origin-top duration-200">
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="{{ route('logo') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Logo' ? 'text-yellow-600 font-bold' : '' }}">Rawat
+                            <a href="{{ route('outpacient') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Rawat Jalan' ? 'text-yellow-600 font-bold' : '' }}">Rawat
                                 Jalan</a>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="{{ route('logo') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Logo' ? 'text-yellow-600 font-bold' : '' }}">Rawat
+                            <a href="{{ route('inpacient') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Rawat Inap' ? 'text-yellow-600 font-bold' : '' }}">Rawat
                                 Inap</a>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="{{ route('logo') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Logo' ? 'text-yellow-600 font-bold' : '' }}">Penunjang</a>
+                            <a href="{{ route('support') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }}">Penunjang</a>
                         </li>
                     </ul>
                 </div>

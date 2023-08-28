@@ -170,8 +170,8 @@
 
         <div class="flex justify-around px-5">
             @forelse ($allNews as $news)
-                <div class="group w-[25%] rounded-md rounded-tl-[30px] rounded-br-[30px] shadow-md overflow-hidden hover:-translate-y-3 duration-500 bg-slate-100 p-3"
-                    data-aos="flip-left">
+                <div
+                    class="group w-[25%] rounded-md rounded-tl-[30px] rounded-br-[30px] shadow-md overflow-hidden hover:-translate-y-4 duration-500 bg-slate-100 p-3">
                     <div class="overflow-hidden rounded-tl-[30px] rounded-br-[30px]">
                         <img src="img/example.jpg" alt="example"
                             class="w-full group-hover:scale-105 duration-200 group-hover:rotate-2 brightness-75 group-hover:brightness-100">

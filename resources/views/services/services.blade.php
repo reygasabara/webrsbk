@@ -55,7 +55,8 @@
                         ipsum dolor, sit amet
                         consectetur adipisicing elit dier jighe skels jgeot.</p>
                     <button
-                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110">Lihat</button>
+                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110"><a
+                            href="{{ route('outpacient') }}">Lihat</a></button>
                 </div>
             </div>
 
@@ -77,7 +78,8 @@
                         ipsum dolor, sit amet
                         consectetur adipisicing elit dier jighe skels jgeot.</p>
                     <button
-                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110">Lihat</button>
+                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110"><a
+                            href="{{ route('inpacient') }}">Lihat</a></button>
                 </div>
             </div>
 
@@ -99,7 +101,8 @@
                         ipsum dolor, sit amet
                         consectetur adipisicing elit dier jighe skels jgeot.</p>
                     <button
-                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110">Lihat</button>
+                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110"><a
+                            href="{{ route('support') }}">Lihat</a></button>
                 </div>
             </div>
         </div>

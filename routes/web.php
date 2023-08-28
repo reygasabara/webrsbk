@@ -32,3 +32,6 @@ Route::get('/profil/sdm', [ProfileSDMController::class, 'showSDM'])->name('sdm')
 Route::get('/profil/denah', [ProfileFloorPlanController::class, 'showFloorPlan'])->name('floorPlan');
 Route::get('/profil/logo', [ProfileLogoController::class, 'showLogo'])->name('logo');
 Route::get('/pelayanan', [ServicesController::class, 'showServices'])->name('services');
+Route::get('/pelayanan/rawat-jalan', [ServicesController::class, 'showOutpacient'])->name('outpacient');
+Route::get('/pelayanan/rawat-inap', [ServicesController::class, 'showInpacient'])->name('inpacient');
+Route::get('/pelayanan/penunjang', [ServicesController::class, 'showSupport'])->name('support');
