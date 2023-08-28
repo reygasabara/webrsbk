@@ -45,7 +45,8 @@
             <i class="fa-solid fa-envelope text-2xl mr-3"></i>
             <div class="">
                 <h1 class="font-bold text-sm">Email</h1>
-                <p class="text-xs">rumkitbhykendari@gmail.com</p>
+                <a href="mailto:rumkitbhykendari@gmail.com"
+                    class="text-xs hover:text-green-700">rumkitbhykendari@gmail.com</a>
             </div>
         </div>
     </section>
@@ -148,7 +149,7 @@
                     <h2 class="font-bold mt-2 text-yellow-600">Rumah Sakit Bhayangkara</h2>
                     <div class="mt-5 flex items-center">
                         <i class="fa-solid fa-location-dot mr-3 text-yellow-500"></i>
-                        <p class="text-sm text-justify">Jl. Wayong No.7, Kec, Kec. Mandonga, Kota Kendari, Sulawesi
+                        <p class="text-sm text-justify">Jl. Wayong No.7, Kec. Mandonga, Kota Kendari, Sulawesi
                             Tenggara 93117
                         </p>
                     </div>
@@ -209,6 +210,37 @@
             </div>
         @endif
     </section>
+
+    <section class="mt-32 mb-10">
+        <div class="relative mb-12 flex justify-center items-center" data-aos="fade-right">
+            <hr class="w-10 mr-5 border-2 border-yellow-700 rounded-md">
+            <h2 class="text-center font-bold text-3xl">Alur Pendaftaran</h2>
+            <hr class="w-10 ml-5 border-2 border-yellow-700 rounded-md">
+        </div>
+
+        <div class="">
+            <img src="{{ asset('img/alurumum.png') }}" alt="alur umum" class="mx-auto">
+            <div class="flex justify-end px-5 mt-4">
+                <button
+                    class="group/button mt-3 relative rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-400  active:from-yellow-500 active:to-green-600 duration-300 transition-colors px-3.5 text-sm capitalize text-white shadow shadow-black/60 mb-4 overflow-hidden w-56 h-10 flex items-center justify-center">
+                    <a href="/"
+                        class="absolute z-10 peer w-full h-full flex items-center justify-center tracking-wide">Alur
+                        Pendaftaran Lainnya <i class="fa-solid fa-angles-right ml-2"></i></a>
+                    <div
+                        class="absolute top-0 left-full duration-200 group-hover/button:left-0 w-full h-full bg-gradient-to-r from-yellow-400 to-green-500 peer-active:from-yellow-500 peer-active:to-green-600">
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    {{-- <section class="mt-32 mb-10">
+        <div class="relative mb-12 flex justify-center items-center" data-aos="fade-right">
+            <hr class="w-10 mr-5 border-2 border-yellow-700 rounded-md">
+            <h2 class="text-center font-bold text-3xl">Prosedur Komplain</h2>
+            <hr class="w-10 ml-5 border-2 border-yellow-700 rounded-md">
+        </div>
+    </section> --}}
 @endsection
 
 @section('scripts')
