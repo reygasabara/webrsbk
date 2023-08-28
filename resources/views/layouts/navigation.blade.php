@@ -75,26 +75,39 @@
                 </div>
             </li>
 
-            <li
-                class="group relative mr-5 text-center duration-300 {{ $title === 'Pasien' ? 'text-yellow-600 font-bold' : '' }}">
-                <a href="/" class="group-hover:text-yellow-500">Informasi Pasien</a>
+            <li class="group relative mr-5 text-center duration-300">
+                <a href="{{ route('patientInformations') }}"
+                    class="group-hover:text-yellow-500 {{ $title === 'Informasi Pasien' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }}">Informasi
+                    Pasien</a>
                 <div class="flex justify-center scale-0 group-hover:scale-100 duration-200">
                     <div class="absolute w-64 h-10"></div>
                     <ul class=" absolute rounded-md shadow-md py-3 px-5 w-64 bg-white top-10  origin-top duration-200">
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="/">Jadwal Dokter</a>
+                            <a href="{{ route('bedInformation') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }}">Jadwal
+                                Dokter</a>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="/">Informasi Tempat Tidur</a>
+                            <a href="{{ route('bedInformation') }}"
+                                class="active:text-yellow-700
+                                block
+                                {{ $submenu === 'Informasi Tempat Tidur' ? 'text-yellow-600 font-bold' : '' }}">Informasi
+                                Tempat Tidur</a>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="/">Alur Pendaftaran</a>
+                            <a href="{{ route('support') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }}">Alur
+                                Pendaftaran</a>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="/">Alur Pendaftaran Via JKN</a>
+                            <a href="{{ route('support') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }}">Alur
+                                Pendaftaran Via JKN</>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="/">Prosedur Komplain</a>
+                            <a href="{{ route('support') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }}">Prosedur
+                                Komplain</a>
                         </li>
                     </ul>
                 </div>
@@ -140,10 +153,12 @@
                 <div class="flex justify-center scale-0 group-hover:scale-100 duration-200">
                     <div class="absolute w-28 h-10"></div>
                     <ul class=" absolute rounded-md shadow-md py-3 px-5 w-28 bg-white top-10  origin-top duration-200">
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li
+                            class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                             <a href="/">Foto</a>
                         </li>
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li
+                            class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                             <a href="/">Video</a>
                         </li>
                     </ul>

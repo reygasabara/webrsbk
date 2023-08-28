@@ -12,4 +12,11 @@ class PatientInformationsController extends Controller
             'submenu' => null,
         ]);
     }
+
+    public function showBedInformation() {
+        return view('patientInformations.BedInformation', [
+            'title'=> 'Informasi Pasien',
+            'submenu' => 'Informasi Tempat Tidur',
+        ]);
+    }
 }

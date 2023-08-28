@@ -18,32 +18,32 @@
                 </thead>
 
                 <tbody>
-                    <tr>
+                    <tr class="hover:bg-yellow-100">
                         <td class="border border-black py-1 text-center">1</td>
                         <td class="border border-black py-1 pl-2">POLRI</td>
                         <td class="border border-black py-1 text-center">25</td>
                     </tr>
-                    <tr>
+                    <tr class="hover:bg-yellow-100">
                         <td class="border border-black py-1 text-center">2</td>
                         <td class="border border-black py-1 pl-2">PNS</td>
                         <td class="border border-black py-1 text-center">33</td>
                     </tr>
-                    <tr>
+                    <tr class="hover:bg-yellow-100">
                         <td class="border border-black py-1 text-center">3</td>
                         <td class="border border-black py-1 pl-2">Dokter Mitra Spesialis</td>
                         <td class="border border-black py-1 text-center">23</td>
                     </tr>
-                    <tr>
+                    <tr class="hover:bg-yellow-100">
                         <td class="border border-black py-1 text-center">4</td>
                         <td class="border border-black py-1 pl-2">Dokter Mitra Umum</td>
                         <td class="border border-black py-1 text-center">17</td>
                     </tr>
-                    <tr>
+                    <tr class="hover:bg-yellow-100">
                         <td class="border border-black py-1 text-center">5</td>
                         <td class="border border-black py-1 pl-2">Karyawan BLU</td>
                         <td class="border border-black py-1 text-center">191</td>
                     </tr>
-                    <tr>
+                    <tr class="hover:bg-yellow-100">
                         <td class="border border-black py-1 text-center" colspan="2">Jumlah</td>
                         <td class="border border-black py-1 text-center">289</td>
                     </tr>

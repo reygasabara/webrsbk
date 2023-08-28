@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeControler;
-use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\ProfilesController;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\PatientInformationsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,5 @@ Route::get('/pelayanan', [ServicesController::class, 'showServices'])->name('ser
 Route::get('/pelayanan/rawat-jalan', [ServicesController::class, 'showOutpacient'])->name('outpacient');
 Route::get('/pelayanan/rawat-inap', [ServicesController::class, 'showInpacient'])->name('inpacient');
 Route::get('/pelayanan/penunjang', [ServicesController::class, 'showSupport'])->name('support');
+Route::get('/pasien/', [PatientInformationsController::class, 'showPatientInformations'])->name('patientInformations');
+Route::get('/pasien/informasi-tempat-tidur', [PatientInformationsController::class, 'showBedInformation'])->name('bedInformation');
