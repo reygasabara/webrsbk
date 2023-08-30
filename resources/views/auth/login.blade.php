@@ -51,7 +51,7 @@
             <div class="relative">
                 <input type="text" id="username"
                     class="peer bg-gray-50 border border-yellow-700 text-yellow-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
-                    placeholder="Masukkan username Anda" autocomplete="off" required>
+                    placeholder="Masukkan username Anda" name="username" autocomplete="off" required>
                 <div
                     class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-yellow-600 peer-invalid:text-red-600">
                     <i class="fa-solid fa-user" class=""></i>
@@ -61,7 +61,7 @@
             <div class="relative">
                 <input type="password" id="password"
                     class="peer bg-gray-50 border border-yellow-700 text-yellow-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
-                    placeholder="Masukkan password Anda" autocomplete="off" required>
+                    placeholder="Masukkan password Anda" name="password" autocomplete="off" required>
                 <div
                     class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-yellow-600 peer-invalid:text-red-600">
                     <i class="fa-solid fa-key" class="text-slate-900"></i>
