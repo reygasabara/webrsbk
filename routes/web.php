@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeControler;
 use App\Http\Controllers\ProfilesController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\PatientInformationsController;
+use App\Http\Controllers\PublicInformationsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,7 +34,12 @@ Route::get('/pelayanan/rawat-jalan', [ServicesController::class, 'showOutpacient
 Route::get('/pelayanan/rawat-inap', [ServicesController::class, 'showInpacient'])->name('inpacient');
 Route::get('/pelayanan/penunjang', [ServicesController::class, 'showSupport'])->name('support');
 Route::get('/pasien/', [PatientInformationsController::class, 'showPatientInformations'])->name('patientInformations');
+Route::get('/pasien/jadwal-dokter', [PatientInformationsController::class, 'showDoctorSchedule'])->name('doctorSchedule');
 Route::get('/pasien/informasi-tempat-tidur', [PatientInformationsController::class, 'showBedInformation'])->name('bedInformation');
+Route::get('/pasien/alur-pendaftaran', [PatientInformationsController::class, 'showRegistrationFlow'])->name('registrationFlow');
+Route::get('/pasien/alur-pendaftaran-via-jkn', [PatientInformationsController::class, 'showJKNRegistrationFlow'])->name('JKNregistrationFlow');
+Route::get('/pasien/prosedur-komplain', [PatientInformationsController::class, 'showComplaintProcedure'])->name('complaintProcedure');
+Route::get('/publik', [PublicInformationsController::class, 'showPublicInformations'])->name('publicInformations');
 
 // ROUTE BACKEND
 Route::middleware(['guest'])->group(function() {

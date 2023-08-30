@@ -83,8 +83,8 @@
                     <div class="absolute w-64 h-10"></div>
                     <ul class=" absolute rounded-md shadow-md py-3 px-5 w-64 bg-white top-10  origin-top duration-200">
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="{{ route('bedInformation') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }}">Jadwal
+                            <a href="{{ route('doctorSchedule') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Jadwal Dokter' ? 'text-yellow-600 font-bold' : '' }}">Jadwal
                                 Dokter</a>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
@@ -95,18 +95,18 @@
                                 Tempat Tidur</a>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="{{ route('support') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }}">Alur
+                            <a href="{{ route('registrationFlow') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Alur Pendaftaran' ? 'text-yellow-600 font-bold' : '' }}">Alur
                                 Pendaftaran</a>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="{{ route('support') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }}">Alur
-                                Pendaftaran Via JKN</>
+                            <a href="{{ route('JKNregistrationFlow') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Alur Pendaftaran Via JKN' ? 'text-yellow-600 font-bold' : '' }}">Alur
+                                Pendaftaran Via JKN<a />
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="{{ route('support') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }}">Prosedur
+                            <a href="{{ route('complaintProcedure') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Prosedur Komplain' ? 'text-yellow-600 font-bold' : '' }}">Prosedur
                                 Komplain</a>
                         </li>
                     </ul>
@@ -115,7 +115,7 @@
 
             <li
                 class="group relative mr-5 text-center duration-300 {{ $title === 'Publik' ? 'text-yellow-600 font-bold' : '' }}">
-                <a href="/" class="group-hover:text-yellow-500">Informasi Publik</a>
+                <a href="{{ route('publicInformations') }}" class="group-hover:text-yellow-500">Informasi Publik</a>
                 <div class="flex justify-center scale-0 group-hover:scale-100 duration-200">
                     <div class="absolute w-72 h-10"></div>
                     <ul class=" absolute rounded-md shadow-md py-3 px-5 w-72 bg-white top-10  origin-top duration-200">

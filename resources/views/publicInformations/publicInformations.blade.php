@@ -32,7 +32,7 @@
     <section class="mt-5 mb-12">
         <div class="relative mb-12 flex justify-center items-center" data-aos="fade-right">
             <hr class="w-10 mr-5 border-2 border-yellow-700 rounded-md">
-            <h2 class="text-center font-bold text-3xl">Informasi Pasien</h2>
+            <h2 class="text-center font-bold text-3xl">Informasi Publik</h2>
             <hr class="w-10 ml-5 border-2 border-yellow-700 rounded-md">
         </div>
 
@@ -48,7 +48,7 @@
                     class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[53%] group-hover:translate-y-0 transition-all duration-500">
                     <i
                         class="fa-solid fa-hospital-user text-5xl w-full mb-3 text-center duration-200 text-white group-hover:-translate-y-24"></i>
-                    <h1 class="text-2xl mb-2 font-bold text-white group-hover:-translate-y-7">Jadwal Dokter</h1>
+                    <h1 class="text-xl mb-2 font-bold text-white group-hover:-translate-y-7">20 Besar Penyakit</h1>
                     <p
                         class="text-xs italic text-white mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Lorem
@@ -71,7 +71,7 @@
                     class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[53%] group-hover:translate-y-0 transition-all duration-500">
                     <i
                         class="fa-solid fa-bed-pulse text-5xl w-full mb-3 text-center duration-200 text-white group-hover:-translate-y-24"></i>
-                    <h1 class="text-md mb-2 font-bold text-white group-hover:-translate-y-7">Informasi Tempat Tidur</h1>
+                    <h1 class="text-2xl mb-2 font-bold text-white group-hover:-translate-y-7">Tarif Pelayanan</h1>
                     <p
                         class="text-xs italic text-white mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Lorem
@@ -94,7 +94,7 @@
                     class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[53%] group-hover:translate-y-0 transition-all duration-500">
                     <i
                         class="fa-solid fa-vial text-5xl w-full mb-3 text-center duration-200 text-white group-hover:-translate-y-24"></i>
-                    <h1 class="text-xl mb-2 font-bold text-white group-hover:-translate-y-7">Alur Pendaftaran</h1>
+                    <h1 class="text-xl mb-2 font-bold text-white group-hover:-translate-y-7">Agenda Kegiatan</h1>
                     <p
                         class="text-xs italic text-white mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Lorem
