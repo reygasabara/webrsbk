@@ -117,7 +117,7 @@
                     class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[53%] group-hover:translate-y-0 transition-all duration-500">
                     <i
                         class="fa-solid fa-vial text-5xl w-full mb-3 text-center duration-200 text-white group-hover:-translate-y-24"></i>
-                    <h1 class="text-md mb-2 font-bold text-white group-hover:-translate-y-7">Alur Pendaftaran Via JKN</h1>
+                    <h1 class="text-2xl mb-2 font-bold text-white group-hover:-translate-y-7">Berita</h1>
                     <p
                         class="text-xs italic text-white mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Lorem
@@ -140,7 +140,76 @@
                     class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[53%] group-hover:translate-y-0 transition-all duration-500">
                     <i
                         class="fa-solid fa-vial text-5xl w-full mb-3 text-center duration-200 text-white group-hover:-translate-y-24"></i>
-                    <h1 class="text-xl mb-2 font-bold text-white group-hover:-translate-y-7">Prosedur Komplain</h1>
+                    <h1 class="text-2xl mb-2 font-bold text-white group-hover:-translate-y-7">PMKP</h1>
+                    <p
+                        class="text-xs italic text-white mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Lorem
+                        ipsum dolor, sit amet
+                        consectetur adipisicing elit dier jighe skels jgeot.</p>
+                    <button
+                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110"><a
+                            href="{{ route('complaintProcedure') }}">Lihat</a></button>
+                </div>
+            </div>
+
+            <div class="group relative shadow-md rounded-md overflow-hidden h-64 duration-200 w-[20%] flex items-center justify-center hover:shadow-xl hover:shadow-black/30 transition-shadow mx-10 mb-20"
+                data-aos="zoom-in-down" data-delay="3000">
+                <img src="{{ asset('img/penunjang.jpg') }}" alt="Gambar"
+                    class="w-full h-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform">
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/95 group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                </div>
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[53%] group-hover:translate-y-0 transition-all duration-500">
+                    <i
+                        class="fa-solid fa-vial text-5xl w-full mb-3 text-center duration-200 text-white group-hover:-translate-y-24"></i>
+                    <h1 class="text-xl mb-2 font-bold text-white group-hover:-translate-y-7">Artikel Kesehatan</h1>
+                    <p
+                        class="text-xs italic text-white mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Lorem
+                        ipsum dolor, sit amet
+                        consectetur adipisicing elit dier jighe skels jgeot.</p>
+                    <button
+                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110"><a
+                            href="{{ route('complaintProcedure') }}">Lihat</a></button>
+                </div>
+            </div>
+
+            <div class="group relative shadow-md rounded-md overflow-hidden h-64 duration-200 w-[20%] flex items-center justify-center hover:shadow-xl hover:shadow-black/30 transition-shadow mx-10 mb-20"
+                data-aos="zoom-in-down" data-delay="3000">
+                <img src="{{ asset('img/penunjang.jpg') }}" alt="Gambar"
+                    class="w-full h-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform">
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/95 group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                </div>
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[53%] group-hover:translate-y-0 transition-all duration-500">
+                    <i
+                        class="fa-solid fa-vial text-5xl w-full mb-3 text-center duration-200 text-white group-hover:-translate-y-24"></i>
+                    <h1 class="text-lg mb-2 font-bold text-white group-hover:-translate-y-7">Hasil Survei Kesehatan</h1>
+                    <p
+                        class="text-xs italic text-white mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Lorem
+                        ipsum dolor, sit amet
+                        consectetur adipisicing elit dier jighe skels jgeot.</p>
+                    <button
+                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110"><a
+                            href="{{ route('complaintProcedure') }}">Lihat</a></button>
+                </div>
+            </div>
+
+            <div class="group relative shadow-md rounded-md overflow-hidden h-64 duration-200 w-[20%] flex items-center justify-center hover:shadow-xl hover:shadow-black/30 transition-shadow mx-10 mb-20"
+                data-aos="zoom-in-down" data-delay="3000">
+                <img src="{{ asset('img/penunjang.jpg') }}" alt="Gambar"
+                    class="w-full h-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform">
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/95 group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                </div>
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[53%] group-hover:translate-y-0 transition-all duration-500">
+                    <i
+                        class="fa-solid fa-vial text-5xl w-full mb-3 text-center duration-200 text-white group-hover:-translate-y-24"></i>
+                    <h1 class="text-2xl mb-2 font-bold text-white group-hover:-translate-y-7">Karir</h1>
                     <p
                         class="text-xs italic text-white mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Lorem
@@ -167,7 +236,7 @@
             });
 
             function updateTextVisibility(event) {
-                $('.carousel-text').removeClass('animate__backInLeft'); // Hapus kelas fadeIn untuk animasi masuk
+                $('.carousel-text').removeClass('animate__backInLeft'); // Hapus kelas fadeIn untuk animasi masuk2
                 $('.carousel-text').removeClass('animate__backOutLeft'); // Hapus kelas fadeOut untuk animasi keluar
 
                 let currentSlideIndex = event.item.index;

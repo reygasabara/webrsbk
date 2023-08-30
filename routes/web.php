@@ -40,6 +40,8 @@ Route::get('/pasien/alur-pendaftaran', [PatientInformationsController::class, 's
 Route::get('/pasien/alur-pendaftaran-via-jkn', [PatientInformationsController::class, 'showJKNRegistrationFlow'])->name('JKNregistrationFlow');
 Route::get('/pasien/prosedur-komplain', [PatientInformationsController::class, 'showComplaintProcedure'])->name('complaintProcedure');
 Route::get('/publik', [PublicInformationsController::class, 'showPublicInformations'])->name('publicInformations');
+Route::get('/publik/informasi-20-besar-penyakit', [PublicInformationsController::class, 'showTopDeseases'])->name('topDeseases');
+Route::get('/publik/tarif-pelayanan', [PublicInformationsController::class, 'showServiceRates'])->name('serviceRates');
 
 // ROUTE BACKEND
 Route::middleware(['guest'])->group(function() {
