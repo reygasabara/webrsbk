@@ -162,40 +162,36 @@
         </div>
     </section>
 
-    <section class="mt-32 mb-10">
-        <div class="relative mb-12 flex justify-center items-center" data-aos="fade-right">
-            <hr class="w-10 mr-5 border-2 border-yellow-700 rounded-md">
-            <h2 class="text-center font-bold text-3xl">Informasi Terbaru</h2>
-            <hr class="w-10 ml-5 border-2 border-yellow-700 rounded-md">
-        </div>
+    @if ($allNews->isNotEmpty())
+        <section class="mt-32 mb-10">
+            <div class="relative mb-12 flex justify-center items-center" data-aos="fade-right">
+                <hr class="w-10 mr-5 border-2 border-yellow-700 rounded-md">
+                <h2 class="text-center font-bold text-3xl">Informasi Terbaru</h2>
+                <hr class="w-10 ml-5 border-2 border-yellow-700 rounded-md">
+            </div>
 
-        <div class="flex justify-around px-5">
-            @forelse ($allNews as $news)
-                <div
-                    class="group w-[25%] rounded-md rounded-tl-[30px] rounded-br-[30px] shadow-md overflow-hidden hover:-translate-y-4 duration-500 bg-slate-100 p-3">
-                    <div class="overflow-hidden rounded-tl-[30px] rounded-br-[30px]">
-                        <img src="img/example.jpg" alt="example"
-                            class="w-full group-hover:scale-105 duration-200 group-hover:rotate-2 brightness-75 group-hover:brightness-100">
-                    </div>
-                    <h3 class="font-bold text-center mt-3 text-2xl text-slate-900">{{ $news->title }}</h3>
-                    <p class="text-justify py-3 text-sm line-clamp-3 overflow-hidden h-[70px]">{{ $news->content }}</p>
-                    <button
-                        class="group/button mt-3 relative rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-400  active:from-yellow-500 active:to-green-600 duration-300 transition-colors px-3.5 text-xs capitalize text-white shadow shadow-black/60 mb-4 overflow-hidden w-24 h-8 flex items-center justify-center">
-                        <a href="/"
-                            class="absolute z-10 peer w-full h-full flex items-center justify-center tracking-wide">Selengkapnya</a>
-                        <div
-                            class="absolute top-0 left-full duration-200 group-hover/button:left-0 w-full h-full bg-gradient-to-r from-yellow-400 to-green-500 peer-active:from-yellow-500 peer-active:to-green-600">
+            <div class="flex justify-around px-5">
+                @foreach ($allNews as $news)
+                    <div
+                        class="group w-[25%] rounded-md rounded-tl-[30px] rounded-br-[30px] shadow-md overflow-hidden hover:-translate-y-4 duration-500 bg-slate-100 p-3">
+                        <div class="overflow-hidden rounded-tl-[30px] rounded-br-[30px]">
+                            <img src="img/example.jpg" alt="example"
+                                class="w-full group-hover:scale-105 duration-200 group-hover:rotate-2 brightness-75 group-hover:brightness-100">
                         </div>
-                    </button>
-                </div>
-            @empty
-                <div class="flex justify-center items-center h-64">
-                    <p>Tidak ada data yang dapat ditampilkan</p>
-                </div>
-            @endforelse
-        </div>
+                        <h3 class="font-bold text-center mt-3 text-2xl text-slate-900">{{ $news->title }}</h3>
+                        <p class="text-justify py-3 text-sm line-clamp-3 overflow-hidden h-[70px]">{{ $news->content }}</p>
+                        <button
+                            class="group/button mt-3 relative rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-400  active:from-yellow-500 active:to-green-600 duration-300 transition-colors px-3.5 text-xs capitalize text-white shadow shadow-black/60 mb-4 overflow-hidden w-24 h-8 flex items-center justify-center">
+                            <a href="/"
+                                class="absolute z-10 peer w-full h-full flex items-center justify-center tracking-wide">Selengkapnya</a>
+                            <div
+                                class="absolute top-0 left-full duration-200 group-hover/button:left-0 w-full h-full bg-gradient-to-r from-yellow-400 to-green-500 peer-active:from-yellow-500 peer-active:to-green-600">
+                            </div>
+                        </button>
+                    </div>
+                @endforeach
+            </div>
 
-        @if ($allNews)
             <div class="flex justify-end px-5 mt-4">
                 <button
                     class="group/button mt-3 relative rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-400  active:from-yellow-500 active:to-green-600 duration-300 transition-colors px-3.5 text-sm capitalize text-white shadow shadow-black/60 mb-4 overflow-hidden w-44 h-10 flex items-center justify-center">
@@ -208,8 +204,8 @@
                     </div>
                 </button>
             </div>
-        @endif
-    </section>
+        </section>
+    @endif
 
     <section class="mt-32 mb-10">
         <div class="relative mb-12 flex justify-center items-center" data-aos="fade-right">
