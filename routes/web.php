@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeControler;
 use App\Http\Controllers\ProfilesController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\PatientInformationsController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\PublicInformationsController;
 
 /*
@@ -50,4 +51,5 @@ Route::middleware(['guest'])->group(function() {
 Route::middleware(['auth'])->group(function () { 
     Route::get('/logout', [AuthController::class, 'logout']);
     Route::get('/dashboard', [DashboardController::class, 'index']);
+    Route::get('/dashboard/post', [PostController::class, 'index']);
 });
