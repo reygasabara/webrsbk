@@ -29,5 +29,14 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('rsbkendari3'),
             'level' => 1,
         ]);
+
+        DB::table('posts')->insert([
+            'id_berita' => 1,
+            'judul' => 'Judul Berita',
+            'berita' => '<p align="justify">RS BHAYANGKARA KENDARI<p align="justify">',
+            'deskripsi' => 'RS BHAYANGKARA KENDARI',
+            'foto' => null,
+            'id_user' => 1,
+        ]);
     }
 }

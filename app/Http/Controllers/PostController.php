@@ -12,7 +12,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('dashboard.post.indexpost');
+        $berita = Post::all();
+        // dd($berita);
+        return view('dashboard.post.indexpost', ['berita' => $berita]);
     }
 
     /**
@@ -20,7 +22,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.post.create');
     }
 
     /**
