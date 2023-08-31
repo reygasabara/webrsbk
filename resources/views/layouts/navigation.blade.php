@@ -131,13 +131,13 @@
                                 Pelayanan</a>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="{{ route('complaintProcedure') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Prosedur Komplain' ? 'text-yellow-600 font-bold' : '' }}">Agenda
+                            <a href="{{ route('agenda') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Agenda Kegiatan' ? 'text-yellow-600 font-bold' : '' }}">Agenda
                                 Kegiatan</a>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
-                            <a href="{{ route('complaintProcedure') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Prosedur Komplain' ? 'text-yellow-600 font-bold' : '' }}">Berita</a>
+                            <a href="{{ route('news') }}"
+                                class="active:text-yellow-700 block {{ $submenu === 'Berita' ? 'text-yellow-600 font-bold' : '' }}">Berita</a>
                         </li>
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                             <a href="{{ route('complaintProcedure') }}"

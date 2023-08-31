@@ -102,7 +102,7 @@
                         consectetur adipisicing elit dier jighe skels jgeot.</p>
                     <button
                         class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110"><a
-                            href="{{ route('registrationFlow') }}">Lihat</a></button>
+                            href="{{ route('news') }}">Lihat</a></button>
                 </div>
             </div>
 

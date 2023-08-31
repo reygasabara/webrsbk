@@ -43,6 +43,8 @@ Route::get('/pasien/prosedur-komplain', [PatientInformationsController::class, '
 Route::get('/publik', [PublicInformationsController::class, 'showPublicInformations'])->name('publicInformations');
 Route::get('/publik/informasi-20-besar-penyakit', [PublicInformationsController::class, 'showTopDeseases'])->name('topDeseases');
 Route::get('/publik/tarif-pelayanan', [PublicInformationsController::class, 'showServiceRates'])->name('serviceRates');
+Route::get('/publik/agenda-kegiatan', [PublicInformationsController::class, 'showAgenda'])->name('agenda');
+Route::get('/publik/berita', [PublicInformationsController::class, 'showNews'])->name('news');
 
 // ROUTE BACKEND
 Route::middleware(['guest'])->group(function() {
@@ -51,7 +53,7 @@ Route::middleware(['guest'])->group(function() {
 });
 
 Route::middleware(['auth'])->group(function () { 
-    Route::get('/logout', [AuthController::class, 'logout']);
-    Route::get('/dashboard', [DashboardController::class, 'index']);
-    Route::get('/dashboard/post', [PostController::class, 'index']);
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard/post', [PostController::class, 'index'])->name('post');
 });

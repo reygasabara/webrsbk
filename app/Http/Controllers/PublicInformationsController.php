@@ -26,4 +26,18 @@ class PublicInformationsController extends Controller
             'submenu' => 'Tarif Pelayanan',
         ]);
     }
+
+    public function showAgenda() {
+        return view('publicInformations.agenda', [
+            'title'=> 'Informasi Publik',
+            'submenu' => 'Agenda Kegiatan',
+        ]);
+    }
+
+    public function showNews() {
+        return view('publicInformations.news', [
+            'title'=> 'Informasi Publik',
+            'submenu' => 'Berita',
+        ]);
+    }
 }
