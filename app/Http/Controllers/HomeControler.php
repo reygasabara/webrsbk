@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use PhpOption\None;
-use App\Models\News;
+use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -13,7 +13,7 @@ class HomeControler extends Controller
         return view('home', [
             'title' => 'Beranda',
             'submenu' => null, 
-            'allNews' => News::latest()->take(3)->get(), 
+            'allNews' => Post::latest()->take(3)->get(), 
         ]);
     }
 }

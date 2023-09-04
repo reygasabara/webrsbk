@@ -14,7 +14,10 @@ class PostController extends Controller
     {
         $berita = Post::all();
         // dd($berita);
-        return view('dashboard.post.indexpost', ['berita' => $berita]);
+        return view('dashboard.post.indexpost', [
+            'title' => 'Post',
+            'berita' => $berita,
+        ]);
     }
 
     /**
@@ -22,7 +25,9 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('dashboard.post.create');
+        return view('dashboard.post.create',  [
+            'title' => 'Post',
+        ]);
     }
 
     /**

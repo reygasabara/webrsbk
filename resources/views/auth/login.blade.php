@@ -33,7 +33,9 @@
 
     {{-- Alert Gagal Login --}}
     @if (session()->has('loginError'))
-        <div class="alert alert-danger text-center" role="alert">
+        <div class="alert alert-danger text-center fixed bg-red-300 text-red-700 rounded-md shadow-md py-2 pr-6 pl-3 mx-auto top-7 text-sm animate__animated animate__bounceIn"
+            role="alert">
+            <i class="fa-solid fa-triangle-exclamation mr-1"></i>
             {{ session('loginError') }}
         </div>
     @endif

@@ -28,9 +28,9 @@
         <script src="https://kit.fontawesome.com/2d9c139c31.js" crossorigin="anonymous"></script>
 
         <script src="{{ asset('js/admin/sidenav.js') }}"></script>
-        @yield('scripts')
     </main>
 
+    @yield('scripts')
 </body>
 
 </html>
