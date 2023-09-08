@@ -55,6 +55,6 @@ Route::middleware(['guest'])->group(function() {
 Route::middleware(['auth'])->group(function () { 
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('/dashboard/post', [PostController::class, 'index'])->name('post');
-    Route::get('/dashboard/post/create', [PostController::class, 'create'])->name('create-post');
+    Route::get('/dashboard/post/checkSlug', [PostController::class, 'checkSlug']);
+    Route::resource('/dashboard/post', PostController::class);
 });

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Post;
 
 class PublicInformationsController extends Controller
 {
@@ -38,6 +39,7 @@ class PublicInformationsController extends Controller
         return view('publicInformations.news', [
             'title'=> 'Informasi Publik',
             'submenu' => 'Berita',
+            'latest' => Post::latest()->first()
         ]);
     }
 }

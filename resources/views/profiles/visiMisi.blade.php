@@ -21,6 +21,9 @@
                 <li>Memberikan dukungan kesehatan pada kegiatan operasional fungsi Kepolisian.</li>
                 <li>Terciptanya insan kesehatan Polri yang handal melalui pelatihan teknis.</li>
             </ol>
+            <h2 class="text-3xl font-bold mt-16">Motto</h2>
+            <p class="text-xl mt-8 ml-[115px] italic mb-20 flex items-center">“Humanis dan Prima
+                dalam Pelayanan”.</p>
         </div>
     </section>
 @endsection

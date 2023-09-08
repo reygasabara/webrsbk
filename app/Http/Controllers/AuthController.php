@@ -29,7 +29,7 @@ class AuthController extends Controller
             return redirect()->intended('dashboard');
         }
 
-        return back()->with('loginError', 'Login Gagal!');
+        return back()->with('loginError', 'Login Gagal! Mohon periksa username atau password Anda.');
     }
 
     public function logout(Request $request)

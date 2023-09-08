@@ -33,7 +33,7 @@
 
     {{-- Alert Gagal Login --}}
     @if (session()->has('loginError'))
-        <div class="alert alert-danger text-center fixed bg-red-300 text-red-700 rounded-md shadow-md py-2 pr-6 pl-3 mx-auto top-7 text-sm animate__animated animate__bounceIn"
+        <div class="alert alert-danger text-center fixed bg-red-300 text-red-700 rounded-md shadow-md py-2 pr-6 pl-3 mx-auto top-7 text-xs animate__animated animate__bounceIn"
             role="alert">
             <i class="fa-solid fa-triangle-exclamation mr-1"></i>
             {{ session('loginError') }}
@@ -53,20 +53,27 @@
             <div class="relative">
                 <input type="text" id="username"
                     class="peer bg-gray-50 border border-yellow-700 text-yellow-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
-                    placeholder="Masukkan username Anda" name="username" autocomplete="off" required>
+                    placeholder="Masukkan username Anda" name="username" autofocus autocomplete="off" required>
                 <div
                     class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-yellow-600 peer-invalid:text-red-600">
                     <i class="fa-solid fa-user" class=""></i>
                 </div>
             </div>
             <label for="password" class="block mb-2 text-sm mt-6 text-yellow-600">Password</label>
-            <div class="relative">
+            <div class="relative overflow-hidden">
                 <input type="password" id="password"
                     class="peer bg-gray-50 border border-yellow-700 text-yellow-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
                     placeholder="Masukkan password Anda" name="password" autocomplete="off" required>
                 <div
                     class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-yellow-600 peer-invalid:text-red-600">
                     <i class="fa-solid fa-key" class="text-slate-900"></i>
+                </div>
+
+                <div class=""><i id="eye"
+                        class="fa-solid fa-eye absolute right-3 top-1/2 opacity-100 -translate-y-1/2 cursor-pointer"></i>
+                </div>
+                <div class=""><i id="eyeSlash"
+                        class="fa-solid fa-eye-slash absolute opacity-0 hidden -right-5 top-1/2 -translate-y-1/2 cursor-pointer"></i>
                 </div>
             </div>
             <button type="submit"
@@ -77,6 +84,7 @@
     </div>
 
     <script src="https://kit.fontawesome.com/2d9c139c31.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/admin/login.js') }}"></script>
 </body>
 
 </html>

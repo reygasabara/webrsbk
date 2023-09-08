@@ -1,8 +1,8 @@
 <button id="hamburger"
-    class="fixed hover:text-slate-500 active:text-slate-900 z-10 top-20 -left-12 text-3xl duration-200 backdrop-blur-sm px-2 rounded-md">
+    class="fixed hover:text-slate-500 active:text-slate-900 z-10 top-20 -ml-12 translate-x-0 text-3xl duration-200 px-2 rounded-md">
     <i class="fa-solid fa-bars"></i>
 </button>
-<nav id="sidenav" class="fixed duration-500 left-0 top-16 h-screen w-64 bg-slate-900 text-slate-100 py-7 px-4 text-xl ">
+<nav id="sidenav" class="fixed -ml-0 duration-500 top-16 h-screen w-64 bg-slate-900 text-slate-100 py-7 px-4 text-xl ">
 
     <div class="flex justify-end items-center mb-5 font-bold">
         <button id="closeButton"
@@ -14,14 +14,14 @@
         <ul class="">
             <li class="mb-2">
                 <a href="{{ route('dashboard') }}"
-                    class="w-full h-full flex items-center py-1 px-3 hover:bg-slate-400 hover:text-slate-100 active:bg-slate-500 rounded-md duration-200 {{ $title === 'Dashboard' ? 'text-yellow-400' : '' }}">
+                    class="w-full h-full flex items-center py-1 px-3 hover:bg-slate-400 hover:text-slate-100 active:bg-slate-500 rounded-md duration-200 {{ Request::is('dashboard') ? 'text-yellow-400' : '' }}">
                     <i class="bx bxs-dashboard mr-4"></i>
                     Dashboard
                 </a>
             </li>
             <li class="mb-2">
-                <a href="{{ route('post') }}"
-                    class="w-full h-full flex items-center py-1 px-3 hover:bg-slate-400 hover:text-slate-100 active:bg-slate-500 rounded-md duration-200 {{ $title === 'Post' ? 'text-yellow-400' : '' }}">
+                <a href="{{ url('dashboard/post') }}"
+                    class="w-full h-full flex items-center py-1 px-3 hover:bg-slate-400 hover:text-slate-100 active:bg-slate-500 rounded-md duration-200 {{ Request::is('dashboard/post*') ? 'text-yellow-400' : '' }}">
                     <i class="bx bxs-news mr-4"></i>
                     Post
                 </a>
