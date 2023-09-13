@@ -29,8 +29,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-merriweather antialiased pt-[88px] text-slate-900">
-    <div class="min-h-screen bg-slate-200">
+<body class="font-merriweather antialiased pt-[63px] lg:pt-[88px] text-slate-900">
+    <div id="outerContainer" class="min-h-screen bg-slate-200">
         @include('layouts.navigation')
 
         <!-- Page Heading -->
@@ -48,8 +48,8 @@
             @yield('container')
         </main>
 
-        <footer class="bg-slate-900 text-slate-200 py-20 w-full flex justify-evenly">
-            <section class="">
+        <footer class="bg-slate-900 text-slate-200 px-5 lg:px-0 py-20 w-full flex flex-wrap justify-evenly">
+            <section class="w-full lg:w-auto mb-8">
                 <h3 class="font-semibold">RS Bhayangkara Kendari</h3>
                 <p class="text-xs mb-7 mt-2">Jl. Wayong No. 7, Kendari</p>
                 <p class="text-xs leading-6 flex items-center mb-3"><i class="fa-solid fa-phone text-lg mr-3"></i>
@@ -61,17 +61,17 @@
                     rumkitbhykendari@gmail.com</p>
             </section>
 
-            <section>
+            <section class="w-full lg:w-auto mb-8">
                 <h3 class="font-semibold">Pelayanan Kami</h3>
 
             </section>
 
-            <section>
+            <section class="w-full lg:w-auto mb-8">
                 <h3 class="font-semibold">Informasi</h3>
 
             </section>
 
-            <section>
+            <section class="w-full lg:w-auto">
                 <h3 class="font-semibold">Jam Buka</h3>
 
             </section>
@@ -86,6 +86,8 @@
             AOS.init();
         });
     </script>
+
+    <script src="{{ asset('js/components/hamburgerButton.js') }}"></script>
 
     @yield('scripts')
 </body>

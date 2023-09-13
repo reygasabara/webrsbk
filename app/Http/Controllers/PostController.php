@@ -48,7 +48,8 @@ class PostController extends Controller
             'judul' => 'required|max:255',
             'slug' => 'required|unique:posts',
             'berita' => 'required',
-            'foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
+            'foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+            'deskripsi_foto' => 'nullable',
         ]);
 
         $path = null;
@@ -59,6 +60,7 @@ class PostController extends Controller
 
         $validatedData['id_user'] = auth()->user()->id;
         $validatedData['foto'] = $path;
+        // dd($validatedData);
 
         Post::create($validatedData);        
         return redirect('/dashboard/post')->with('success', 'Berita telah ditambahkan');
@@ -98,7 +100,8 @@ class PostController extends Controller
         $rules = [
             'judul' => 'required|max:255',
             'berita' => 'required',
-            'foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
+            'foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+            'deskripsi_foto' => 'nullable',
         ];
 
         if ($request->slug != $post->slug) {

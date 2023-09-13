@@ -37,12 +37,20 @@
             </div>
         </div>
         @if ($post->foto)
-            <img src="{{ asset('storage/' . substr($post->foto, 7)) }}" alt="berita"
-                class=" bg-slate-400 rounded-lg object-cover">
+            <figure>
+                <img id="image" src="{{ asset('storage/' . substr($post->foto, 7)) }}" alt="berita"
+                    class=" bg-slate-400 rounded-lg object-cover">
+                <figcaption id="imageCaption" class="text-slate-500 text-xs mt-1 text-justify">{{ $post->deskripsi_foto }}
+                </figcaption>
+            </figure>
         @endif
 
-        <div class="mt-8 ">
+        <div class="mt-8 text-justify [&>*]:leading-8 [&>*]:mb-3">
             {!! $post->berita !!}
         </div>
     </section>
+@endsection
+
+@section('scripts')
+    <script src="{{ asset('js/components/showImage.js') }}"></script>
 @endsection

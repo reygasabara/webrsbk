@@ -45,6 +45,8 @@ Route::get('/publik/informasi-20-besar-penyakit', [PublicInformationsController:
 Route::get('/publik/tarif-pelayanan', [PublicInformationsController::class, 'showServiceRates'])->name('serviceRates');
 Route::get('/publik/agenda-kegiatan', [PublicInformationsController::class, 'showAgenda'])->name('agenda');
 Route::get('/publik/berita', [PublicInformationsController::class, 'showNews'])->name('news');
+Route::get('/publik/berita/{post}', [PublicInformationsController::class, 'showDetailNews'])->name('detailNews');
+Route::get('/contact', [ContactUsController::class, 'showContactUs'])->name('contact');
 
 // ROUTE BACKEND
 Route::middleware(['guest'])->group(function() {

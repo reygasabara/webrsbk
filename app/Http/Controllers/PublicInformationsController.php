@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use Carbon\Carbon;
 
 class PublicInformationsController extends Controller
 {
@@ -40,6 +41,22 @@ class PublicInformationsController extends Controller
             'title'=> 'Informasi Publik',
             'submenu' => 'Berita',
             'latest' => Post::latest()->first()
+        ]);
+    }
+
+    public function showDetailNews(Post $post) {
+        $carbon = Carbon::parse($post->updated_at);
+        $carbon->setTimezone('Asia/Shanghai');
+
+        $date = $carbon->translatedFormat('j F Y');
+        $time = $carbon->translatedFormat('H:i');
+
+        $post->formatted_date = $date . ', pukul ' . $time;
+
+        return view('publicInformations.detailNews', [
+            'title'=> 'Informasi Publik',
+            'submenu' => 'Berita',
+            'post' => $post,
         ]);
     }
 }

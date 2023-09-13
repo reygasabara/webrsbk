@@ -67,6 +67,16 @@
                 <p class="text-xs text-red-700">{{ $message }}</p>
             @enderror
 
+            <div id="descriptionContainer" class="hidden">
+                <label for="deskripsi_foto" class="font-bold">Deskripsi Foto</label>
+                <input type="text" name="deskripsi_foto" id="deskripsi_foto"
+                    class="bg-gray-50 mb-4 mt-1 border border-slate-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
+                    value="{{ old('deskripsi_foto', $post->deskripsi_foto) }}">
+                @error('deskripsi_foto')
+                    <p class="text-xs text-red-700">{{ $message }}</p>
+                @enderror
+            </div>
+
             <button type="submit"
                 class="rounded-md bg-green-400 hover:bg-green-500 active:bg-green-600 active:text-white duration-200 py-1 px-4 mt-7 block mx-auto shadow shadow-black/60">Edit
                 Post</button>

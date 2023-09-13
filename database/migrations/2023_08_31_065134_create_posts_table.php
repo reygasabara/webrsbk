@@ -17,8 +17,9 @@ return new class extends Migration
             $table->string('slug');
             $table->text('berita');
             $table->string('foto')->nullable();
-            $table->integer('id_user')->nullable();
+            $table->string('deskripsi_foto')->nullable();
             $table->timestamps();
+            $table->integer('id_user')->nullable();
         });
     }
 

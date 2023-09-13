@@ -13,7 +13,7 @@ class HomeControler extends Controller
         return view('home', [
             'title' => 'Beranda',
             'submenu' => null, 
-            'allNews' => Post::latest()->take(3)->get(), 
+            'posts' => Post::latest()->take(3)->get(), 
         ]);
     }
 }
