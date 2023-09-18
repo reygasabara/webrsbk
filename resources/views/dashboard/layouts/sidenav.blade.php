@@ -1,8 +1,10 @@
 <button id="hamburger"
-    class="fixed hover:text-slate-500 active:text-slate-900 z-10 top-20 -ml-12 translate-x-0 text-3xl duration-200 px-2 rounded-md">
+    class="fixed w-full md:w-auto text-left bg-white hover:text-slate-500 active:text-slate-900 z-10 top-20 ml-1 translate-x-0 text-3xl duration-200 px-2 rounded-md">
     <i class="fa-solid fa-bars"></i>
+    <div class="absolute md:hidden bg-white -top-3 w-full h-4"></div>
 </button>
-<nav id="sidenav" class="fixed -ml-0 duration-500 top-16 h-screen w-64 bg-slate-900 text-slate-100 py-7 px-4 text-xl ">
+<nav id="sidenav"
+    class="fixed z-10 -ml-0 duration-500 top-16 h-screen w-64 bg-slate-900 text-slate-100 py-7 px-4 text-xl ">
 
     <div class="flex justify-end items-center mb-5 font-bold">
         <button id="closeButton"

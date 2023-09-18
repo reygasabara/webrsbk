@@ -2,12 +2,14 @@
 
 @section('container')
     <section class="py-12 mx-6 ">
-        <h1 class="text-4xl font-bold mb-2 animate__animated animate__lightSpeedInLeft inline-block">{{ $submenu }}</h1>
+        <h1 class="text-3xl md:text-4xl font-bold mb-2 animate__animated animate__lightSpeedInLeft inline-block">
+            {{ $submenu }}</h1>
         <hr class="border-2 border-yellow-500 rounded-md mb-12">
 
-        <div class="px-20 mb-12">
-            <h2 class="text-center font-semibold text-2xl">Daftar Riil Personil Rumkit Bhayangkara Tingkat III Kendari</h2>
-            <p class="text-center text-xl">(<span class="italic">Update</span> pada 13 Juli 2023)</p>
+        <div class="md:px-20 mb-12">
+            <h2 class="text-center font-semibold text-xl md:text-2xl">Daftar Riil Personil Rumkit Bhayangkara Tingkat III
+                Kendari</h2>
+            <p class="text-center text-lg md:text-xl">(<span class="italic">Update</span> pada 13 Juli 2023)</p>
             <table class="table-auto w-full mt-7">
                 <thead>
                     <tr class="text-center bg-yellow-400 font-semibold">

@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class ContactUsController extends Controller
 {
-    public function showContactUs() {
-        return view('contactUs', [
+    public function showContact() {
+        return view('contact', [
             'title'=> 'Hubungi Kami',
             'submenu' => null,
         ]);

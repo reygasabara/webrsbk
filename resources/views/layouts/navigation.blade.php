@@ -170,11 +170,14 @@
     </div>
 
     <div class="relative flex items-center lg:hidden ml-4">
-        <button id="hamburger" class="group block w-12 h-full px-2" onclick="hamburgerButton()">
-            <div class="origin-top-left transition duration-300 ease-in-out h-1 bg-yellow-700 mb-1">
+        <button id="hamburger" class="group block w-12 h-full px-2 duration-200" onclick="hamburgerButton()">
+            <div
+                class="origin-top-left transform rotate-0 -translate-y-0 transition duration-300 ease-in-out h-1 bg-yellow-700 mb-1">
             </div>
             <div class="transition duration-300 ease-in-out h-1 bg-yellow-700 mb-1"></div>
-            <div class="origin-bottom-left transition duration-300 ease-in-out h-1 bg-yellow-700"></div>
+            <div
+                class="origin-bottom-left transform -rotate-0 translate-y-0 transition duration-300 ease-in-out h-1 bg-yellow-700">
+            </div>
         </button>
     </div>
 
@@ -324,24 +327,24 @@
                 </li>
                 <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                     <a href="{{ route('complaintProcedure') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Prosedur Komplain' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="active:text-yellow-700 block {{ $submenu === 'PMKP' ? 'text-yellow-600 font-bold' : '' }}"><i
                             class="fa-solid fa-angle-right"></i> PMKP</a>
                 </li>
                 <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                     <a href="{{ route('complaintProcedure') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Prosedur Komplain' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="active:text-yellow-700 block {{ $submenu === 'Artikel Kesehatan' ? 'text-yellow-600 font-bold' : '' }}"><i
                             class="fa-solid fa-angle-right"></i> Artikel
                         Kesehatan</a>
                 </li>
                 <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                     <a href="{{ route('complaintProcedure') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Prosedur Komplain' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="active:text-yellow-700 block {{ $submenu === 'Hasil Survei Kepuasan' ? 'text-yellow-600 font-bold' : '' }}"><i
                             class="fa-solid fa-angle-right"></i> Hasil
                         Survei Kepuasan</a>
                 </li>
                 <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                     <a href="{{ route('complaintProcedure') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Prosedur Komplain' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="active:text-yellow-700 block {{ $submenu === 'Karir' ? 'text-yellow-600 font-bold' : '' }}"><i
                             class="fa-solid fa-angle-right"></i> Karir</a>
                 </li>
             </ul>

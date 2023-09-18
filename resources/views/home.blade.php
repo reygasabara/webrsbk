@@ -7,31 +7,9 @@
 @endsection
 
 @section('container')
-    <section>
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <div style="background-image: url({{ asset('img/rsbk.jpg') }})"
-                    class="relative overflow-hidden w-full h-[80vh] bg-cover bg-center bg-no-repeat mb-5">
-                    <h1
-                        class="carousel-text text-4xl lg:text-7xl ml-6 opacity-0 font-bold text-white absolute top-6 animate__animated">
-                        Teks Slide
-                        1
-                    </h1>
-                </div>
-            </div>
-            <div class="item">
-                <div style="background-image: url({{ asset('img/rsbk.jpg') }})"
-                    class="relative w-full h-[80vh] bg-cover bg-center bg-no-repeat mb-5">
-                    <h1
-                        class="carousel-text text-4xl lg:text-7xl font-bold text-white opacity-0 absolute top-6 right-6 animate__animated">
-                        Teks
-                        Slide 2</h1>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('layouts.carousel')
 
-    <section class="relative hidden lg:flex -top-16 z-10 text-slate-900 pl-5">
+    <section class="relative hidden md:flex -top-16 z-10 text-slate-900 pl-5">
         <div
             class="rounded-xl bg-green-200 shadow-lg shadow-black/30 px-5 py-3 flex items-center text-slate-700 mr-8 animate__animated animate__zoomIn">
             <i class="fa-solid fa-phone text-2xl mr-3"></i>
@@ -59,8 +37,8 @@
             <hr class="w-10 ml-5 border-2 border-yellow-700 rounded-md">
         </div>
 
-        <div class="flex flex-wrap justify-evenly px-6 lg:px-0 text-slate-800">
-            <div class="group relative shadow-md rounded-md overflow-hidden h-64 duration-200 mb-6 lg:mb-0 lg:w-[20%] flex items-center justify-center hover:shadow-xl hover:shadow-black/30 transition-shadow"
+        <div class="flex flex-wrap justify-evenly px-10 md:px-0 text-slate-800">
+            <div class="group relative shadow-md rounded-md overflow-hidden h-64 duration-200 mb-6 md:mb-0 md:w-[30%] lg:w-[20%] flex items-center justify-center hover:shadow-xl hover:shadow-black/30 transition-shadow"
                 data-aos="zoom-in-down">
                 <img src="{{ asset('img/rajal.jpg') }}" alt="Gambar"
                     class="w-full h-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform">
@@ -71,7 +49,7 @@
                     class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[53%] group-hover:translate-y-0 transition-all duration-500">
                     <i
                         class="fa-solid fa-hospital-user text-5xl w-full mb-3 text-center duration-200 text-white group-hover:-translate-y-24"></i>
-                    <h1 class="text-2xl mb-2 font-bold text-white group-hover:-translate-y-7">Rawat Jalan</h1>
+                    <h1 class="text-xl md:text-2xl mb-2 font-bold text-white group-hover:-translate-y-7">Rawat Jalan</h1>
                     <p
                         class="text-xs italic text-white mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Lorem
@@ -82,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="group relative shadow-md rounded-md overflow-hidden h-64 duration-200 mb-6 lg:mb-0 lg:w-[20%] flex items-center justify-center hover:shadow-xl hover:shadow-black/30 transition-shadow"
+            <div class="group relative shadow-md rounded-md overflow-hidden h-64 duration-200 mb-6 md:mb-0 md:w-[30%] lg:w-[20%] flex items-center justify-center hover:shadow-xl hover:shadow-black/30 transition-shadow"
                 data-aos="zoom-in-down">
                 <img src="{{ asset('img/ranap.jpg') }}" alt="Gambar"
                     class="w-full h-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform">
@@ -93,7 +71,7 @@
                     class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[53%] group-hover:translate-y-0 transition-all duration-500">
                     <i
                         class="fa-solid fa-bed-pulse text-5xl w-full mb-3 text-center duration-200 text-white group-hover:-translate-y-24"></i>
-                    <h1 class="text-2xl mb-2 font-bold text-white group-hover:-translate-y-7">Rawat Inap</h1>
+                    <h1 class="text-xl md:text-2xl mb-2 font-bold text-white group-hover:-translate-y-7">Rawat Inap</h1>
                     <p
                         class="text-xs italic text-white mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Lorem
@@ -104,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="group relative shadow-md rounded-md overflow-hidden h-64 duration-200 lg:w-[20%] flex items-center justify-center hover:shadow-xl hover:shadow-black/30 transition-shadow"
+            <div class="group relative shadow-md rounded-md overflow-hidden h-64 duration-200 md:w-[30%] lg:w-[20%] flex items-center justify-center hover:shadow-xl hover:shadow-black/30 transition-shadow"
                 data-aos="zoom-in-down" data-delay="3000">
                 <img src="{{ asset('img/penunjang.jpg') }}" alt="Gambar"
                     class="w-full h-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform">
@@ -115,7 +93,7 @@
                     class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[53%] group-hover:translate-y-0 transition-all duration-500">
                     <i
                         class="fa-solid fa-vial text-5xl w-full mb-3 text-center duration-200 text-white group-hover:-translate-y-24"></i>
-                    <h1 class="text-2xl mb-2 font-bold text-white group-hover:-translate-y-7">Penunjang</h1>
+                    <h1 class="text-xl md:text-2xl mb-2 font-bold text-white group-hover:-translate-y-7">Penunjang</h1>
                     <p
                         class="text-xs italic text-white mb-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         Lorem
@@ -143,9 +121,9 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.2326975627593!2d122.50542297420566!3d-3.972448044460692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98ecde085619e3%3A0x5d4c17a67bded53e!2sRumah%20Sakit%20Bhayangkara%20Kendari!5e0!3m2!1sid!2sid!4v1692882814809!5m2!1sid!2sid"
                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                class="w-full lg:w-[65%] mb-6 lg:mb-0 h-[400px] rounded-xl" data-aos="zoom-in-up"></iframe>
+                class="w-full md:w-[50%] lg:w-[65%] mb-6 md:mb-0 h-[400px] rounded-xl" data-aos="zoom-in-up"></iframe>
 
-            <div class="w-full lg:w-[30%] h-[400px] rounded-xl bg-slate-100 p-3" data-aos="zoom-in-up">
+            <div class="w-full md:w-[45%] lg:w-[30%] h-[400px] rounded-xl bg-slate-100 p-3" data-aos="zoom-in-up">
                 <div class="overflow-hidden rounded-md">
                     <img src="img/rsbk.jpg" alt="example"
                         class="w-full group-hover:scale-105 duration-200 group-hover:rotate-2 brightness-75 group-hover:brightness-100 h-44 object-cover object-center">
@@ -173,10 +151,10 @@
                 <hr class="w-10 ml-5 border-2 border-yellow-700 rounded-md">
             </div>
 
-            <div class="flex flex-wrap justify-around px-5">
+            <div class="flex flex-wrap justify-around px-10 md:px-0">
                 @foreach ($posts as $post)
                     <div
-                        class="group mb-6 lg:mb-0 w-full lg:w-[25%] rounded-md rounded-tl-[30px] rounded-br-[30px] shadow-md overflow-hidden hover:-translate-y-4 duration-500 bg-slate-100 p-3 flex-col justify-between items-stretch">
+                        class="group mb-6 md:mb-0 w-full md:w-[32%] lg:w-[25%] rounded-md rounded-tl-[30px] rounded-br-[30px] shadow-md overflow-hidden md:hover:-translate-y-4 duration-500 bg-slate-100 p-3 flex-col justify-between items-stretch">
                         <div class="overflow-hidden rounded-tl-[30px] rounded-br-[30px]">
                             <img src="{{ asset('storage/' . substr($post->foto, 7)) }}" alt="berita"
                                 class="w-full h-48 object-cover bg-slate-100 group-hover:scale-105 duration-200 group-hover:rotate-2 brightness-75 group-hover:brightness-100">
@@ -219,7 +197,7 @@
             <hr class="w-10 ml-5 border-2 border-yellow-700 rounded-md">
         </div>
 
-        <div class="px-5 lg:px-0">
+        <div class="px-10 lg:px-0">
             <img src="{{ asset('img/alurumum.png') }}" alt="alur umum" class="mx-auto">
             <div class="flex justify-end px-5 mt-4">
                 <button

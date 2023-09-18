@@ -7,27 +7,7 @@
 @endsection
 
 @section('container')
-    <section>
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <div style="background-image: url({{ asset('img/rsbk.jpg') }})"
-                    class="relative overflow-hidden w-full h-[80vh] bg-cover bg-center bg-no-repeat mb-5">
-                    <h1 class="carousel-text text-7xl ml-6 opacity-0 font-bold text-white absolute top-6 animate__animated">
-                        Teks
-                    </h1>
-                </div>
-            </div>
-            <div class="item">
-                <div style="background-image: url({{ asset('img/rsbk.jpg') }})"
-                    class="relative w-full h-[80vh] bg-cover bg-center bg-no-repeat mb-5">
-                    <h1
-                        class="carousel-text text-7xl font-bold text-white opacity-0 absolute top-6 right-6 animate__animated">
-                        Teks
-                        Slide 2</h1>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('layouts.carousel')
 
     <section class="mt-5 mb-12">
         <div class="relative mb-12 flex justify-center items-center" data-aos="fade-right">

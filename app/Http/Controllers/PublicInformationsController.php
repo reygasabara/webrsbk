@@ -40,7 +40,8 @@ class PublicInformationsController extends Controller
         return view('publicInformations.news', [
             'title'=> 'Informasi Publik',
             'submenu' => 'Berita',
-            'latest' => Post::latest()->first()
+            'latest' => Post::latest()->first(),
+            'posts' => Post::all()
         ]);
     }
 

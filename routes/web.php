@@ -1,14 +1,15 @@
 <?php
 
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeControler;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfilesController;
 use App\Http\Controllers\ServicesController;
-use App\Http\Controllers\PatientInformationsController;
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PublicInformationsController;
+use App\Http\Controllers\PatientInformationsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,7 +47,7 @@ Route::get('/publik/tarif-pelayanan', [PublicInformationsController::class, 'sho
 Route::get('/publik/agenda-kegiatan', [PublicInformationsController::class, 'showAgenda'])->name('agenda');
 Route::get('/publik/berita', [PublicInformationsController::class, 'showNews'])->name('news');
 Route::get('/publik/berita/{post}', [PublicInformationsController::class, 'showDetailNews'])->name('detailNews');
-Route::get('/contact', [ContactUsController::class, 'showContactUs'])->name('contact');
+Route::get('/contact', [ContactUsController::class, 'showContact'])->name('contact');
 
 // ROUTE BACKEND
 Route::middleware(['guest'])->group(function() {

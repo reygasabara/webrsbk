@@ -1,8 +1,8 @@
-<nav class="fixed top-0 bg-slate-300 w-full px-5 flex justify-between z-50">
+<nav class="fixed top-0 bg-slate-300 w-full px-3 md:px-5 flex justify-between z-50">
     <div class="flex items-center py-4">
         <img src="{{ asset('img/logo.png') }}" alt="logo" class="w-10">
         <div class="pl-5">
-            <h1 class="font-bold text-2xl text-yellow-700">RSB KENDARI</h1>
+            <h1 class="font-bold text-xl md:text-2xl text-yellow-700">RSB KENDARI</h1>
         </div>
     </div>
 

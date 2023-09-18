@@ -54,21 +54,21 @@
                         <td class="border border-black py-2 text-center">
                             <a href="/dashboard/post/{{ $list->slug }}">
                                 <button
-                                    class="rounded-md bg-sky-400 hover:bg-sky-500 active:bg-sky-600 active:text-sky-50 duration-200 w-10 py-1"><i
-                                        class="fa-solid fa-eye"></i></button>
+                                    class="rounded-md bg-sky-400 hover:bg-sky-500 active:bg-sky-600 active:text-sky-50 duration-200 w-8 md:w-10 py-1 mb-2"><i
+                                        class="fa-solid fa-eye text-xs md:text-base"></i></button>
                             </a>
                             <a href="/dashboard/post/{{ $list->slug }}/edit">
                                 <button
-                                    class="rounded-md bg-green-400 hover:bg-green-500 active:bg-green-600 active:text-green-50 duration-200 w-10 py-1"><i
-                                        class="fa-solid fa-pencil"></i></button>
+                                    class="rounded-md bg-green-400 hover:bg-green-500 active:bg-green-600 active:text-green-50 duration-200 w-8 md:w-10 py-1 mb-2"><i
+                                        class="fa-solid fa-pencil text-xs md:text-base"></i></button>
                             </a>
                             <form action="{{ url('dashboard/post/' . $list->slug) }}" method="post" class="inline">
                                 @method('delete')
                                 @csrf
                                 <button
-                                    class="rounded-md bg-red-400 hover:bg-red-500 active:bg-red-600 active:text-red-50 duration-200 w-10 py-1"
+                                    class="rounded-md bg-red-400 hover:bg-red-500 active:bg-red-600 active:text-red-50 duration-200 w-8 md:w-10 py-1"
                                     onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')"><i
-                                        class="fa-solid fa-trash"></i></button>
+                                        class="fa-solid fa-trash text-xs md:text-base"></i></button>
                             </form>
                         </td>
                     </tr>
