@@ -11,7 +11,7 @@
             <li class="relative  text-center overflow-hidden text-xl">
                 <a href="{{ route('dashboard') }}"
                     class="w-full h-full flex items-center py-1 px-3 rounded-md hover:bg-yellow-400 active:bg-yellow-500 duration-200"><i
-                        class='bx bxs-user-circle mr-2 text-2xl mt-[1px]'></i>{{ auth()->user()->name }}</a>
+                        class='bx bxs-user-circle mr-2 text-2xl mt-[1px]'></i> Admin</a>
             </li>
     </div>
 </nav>

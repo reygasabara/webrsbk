@@ -12,7 +12,7 @@
     <section class="mt-5 mb-12">
         <div class="relative mb-12 flex justify-center items-center" data-aos="fade-right">
             <hr class="w-10 mr-5 border-2 border-yellow-700 rounded-md">
-            <h2 class="text-center font-bold text-3xl">Hubungi Kami</h2>
+            <h2 class="text-center font-bold text-2xl md:text-4xl">Hubungi Kami</h2>
             <hr class="w-10 ml-5 border-2 border-yellow-700 rounded-md">
         </div>
 
@@ -59,6 +59,55 @@
                 </div>
             </div>
         </section>
+    </section>
+
+    <section class="mb-12">
+        <div class="relative mb-12 flex justify-center items-center" data-aos="fade-right">
+            <hr class="w-10 mr-5 border-2 border-yellow-700 rounded-md">
+            <h2 class="text-center font-bold text-2xl md:text-4xl">Form Laporan</h2>
+            <hr class="w-10 ml-5 border-2 border-yellow-700 rounded-md">
+        </div>
+
+        <form method="post" action="/kontak" class="px-10">
+            @csrf
+            <div class="flex justify-between">
+                <div class="w-[48%]">
+                    <label for="fullname" class="text-sm">Nama Lengkap <span class="text-red-600">*</span></label>
+                    <input type="text" name="fullname" id="fullname"
+                        class="bg-gray-50 mb-4 mt-1 border border-slate-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
+                        required value="{{ old('fullname') }}">
+                    @error('fullname')
+                        <p class="text-xs text-red-700">{{ $message }}</p>
+                    @enderror
+                </div>
+
+                <div class="w-[48%]">
+                    <label for="phone" class="text-sm">No. Telepon <span class="text-red-600">*</span></label>
+                    <input type="number" name="phone" id="phone"
+                        class="bg-gray-50 mb-4 mt-1 border border-slate-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
+                        value="{{ old('phone') }}" maxlength="13" required>
+                    @error('phone')
+                        <p class="text-xs text-red-700">{{ $message }}</p>
+                    @enderror
+
+                </div>
+            </div>
+
+
+
+            <label for="message" class="text-sm block mb-1">Pesan <span class="text-red-600">*</span></label>
+            <textarea id="message" name="message" value="{{ old('message') }}"
+                class="g-gray-50 mb-4 mt-1 min-h-[270px] border border-slate-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-500"
+                required></textarea>
+            @error('message')
+                <p class="text-xs text-red-700">{{ $message }}</p>
+            @enderror
+
+            <button type="submit"
+                class="rounded-md bg-green-400 hover:bg-green-500 active:bg-green-600 active:text-white duration-200 text-sm py-2 px-4 mt-7 block mx-auto shadow shadow-black/60"><i
+                    class="fa-solid fa-paper-plane mr-1"></i> Kirim</button>
+
+        </form>
     </section>
 @endsection
 

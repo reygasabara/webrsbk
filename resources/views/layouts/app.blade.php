@@ -48,32 +48,64 @@
             @yield('container')
         </main>
 
-        <footer class="bg-slate-900 text-slate-200 px-5 md:px-0 py-20 w-full flex flex-wrap justify-evenly">
-            <section class="w-full md:w-auto mb-8">
-                <h3 class="font-semibold">RS Bhayangkara Kendari</h3>
-                <p class="text-xs mb-7 mt-2">Jl. Wayong No. 7, Kendari</p>
-                <p class="text-xs leading-6 flex items-center mb-3"><i class="fa-solid fa-phone text-lg mr-3"></i>
-                    +62 823 6060 7020</p>
-                <p class="text-xs leading-6 flex items-center mb-3"><i
-                        class="fa-solid fa-truck-medical text-lg mr-3"></i>
-                </p>
-                <p class="text-xs leading-6 flex items-center mb-3"><i class="fa-solid fa-envelope text-lg mr-3"></i>
-                    rumkitbhykendari@gmail.com</p>
+        <footer class="relative bg-slate-900">
+            <section class="text-slate-200 px-5 md:px-0 pt-12 pb-12 md:pb-0 w-full flex flex-wrap justify-around">
+                <div class="w-full md:w-auto mb-8 md:mb-0">
+                    <h3 class="font-semibold text-center md:text-left">RS Bhayangkara Kendari</h3>
+                    <p class="text-xs text-center md:text-left mb-10 md:mb-7 mt-2 md:mt-4">Jl. Wayong No. 7, Kendari</p>
+                    <p class="text-xs leading-6 flex items-center mb-3"><i class="fa-solid fa-phone mr-3"></i>
+                        +62 823 6060 7020</p>
+                    <p class="text-xs leading-6 flex items-center mb-3"><i class="fa-solid fa-truck-medical mr-3"></i>
+                    </p>
+                    <p class="text-xs leading-6 flex items-center mb-3"><i class="fa-solid fa-envelope mr-3"></i><a
+                            href="mailto:rumkitbhykendari@gmail.com"
+                            class="hover:text-yellow-500 active:text-yellow-700"> rumkitbhykendari@gmail.com</a></p>
+                </div>
+
+                <div class="w-[60%] md:w-auto mb-8 md:mb-0">
+                    <h3 class="font-semibold">Pelayanan Kami</h3>
+                    <div class="text-xs mt-4 flex flex-col">
+                        <a href="{{ route('outpacient') }}"
+                            class="mb-3 hover:text-yellow-500 w-fit active:text-yellow-700">Rawat Jalan</a>
+                        <a href="{{ route('inpacient') }}"
+                            class="mb-3 hover:text-yellow-500 w-fit active:text-yellow-700">Rawat Inap</a>
+                        <a href="{{ route('support') }}"
+                            class="hover:text-yellow-500 w-fit active:text-yellow-700">Penunjang</a>
+                    </div>
+                </div>
+
+                <div class="w-[40%] md:w-auto mb-8 md:mb-0">
+                    <h3 class="font-semibold">Informasi</h3>
+
+                    <div class="text-xs mt-4 flex flex-col">
+                        <a href="{{ route('doctorSchedule') }}"
+                            class="mb-3 hover:text-yellow-500 w-fit active:text-yellow-700">Jadwal Dokter</a>
+                        <a href="{{ route('bedInformation') }}"
+                            class="mb-3 hover:text-yellow-500 w-fit active:text-yellow-700">Informasi Tempat Tidur</a>
+                        <a href="{{ route('registrationFlow') }}"
+                            class="mb-3 hover:text-yellow-500 w-fit active:text-yellow-700">Alur Pendaftaran</a>
+                        <a href="{{ route('complaintProcedure') }}"
+                            class="mb-3 hover:text-yellow-500 w-fit active:text-yellow-700">Prosedur Komplain</a>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-auto">
+                    <h3 class="font-semibold">Jam Buka</h3>
+                    <p class="text-xs mt-4">24 jam</p>
+                </div>
             </section>
 
-            <section class="w-full md:w-auto mb-8">
-                <h3 class="font-semibold">Pelayanan Kami</h3>
-
+            <section class="absolute md:static right-9 bottom-[107px] flex justify-end text-white pb-3 pr-3 text-xl">
+                <a href="https://www.instagram.com/rs.bhayangkara.kendari/" target="_blank"><i
+                        class="fa-brands fa-instagram mr-3 hover:text-orange-700 active:text-orange-500"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100075551007451/" target="_blank"><i
+                        class="fa-brands fa-facebook mr-3 hover:text-sky-600 active:text-sky-500"></i></a>
+                <a href="https://www.youtube.com/@rsbhayangkarakendari8014" target="_blank"><i
+                        class="fa-brands fa-youtube mr-3 hover:text-red-700 active:text-red-500"></i></a>
             </section>
 
-            <section class="w-full md:w-auto mb-8">
-                <h3 class="font-semibold">Informasi</h3>
-
-            </section>
-
-            <section class="w-full md:w-auto">
-                <h3 class="font-semibold">Jam Buka</h3>
-
+            <section class="bg-slate-800 text-center w-full py-3 text-slate-100 text-xs">
+                <p>&copy; 2023 - RS. Bhayangkara Kendari</p>
             </section>
         </footer>
     </div>

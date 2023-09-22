@@ -14,6 +14,8 @@ class DashboardController extends Controller
     {
         return view('dashboard.indexdashboard', [
             'title'=>'Dashboard',
+            'numberOfNews'=>Post::all()->count(),
+            'latestPosts' => Post::latest()->take(5)->get(), 
         ]);
     }
 

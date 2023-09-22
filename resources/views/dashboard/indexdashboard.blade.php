@@ -20,7 +20,36 @@
     </section>
 
     <section class="mt-10">
-        <div class="rounded-md shadow-md w-40 h-40 bg-slate-300"></div>
+        <div class="rounded-lg shadow-xl flex w-fit border">
+            <div class="bg-sky-500 text-white px-3 rounded-lg flex">
+                <i class="fa-solid fa-newspaper m-auto"></i>
+            </div>
+            <div class="ml-4 mr-6">
+                <h2 class="font-bold leading-4">Berita</h2>
+                <p class="text-center">{{ $numberOfNews }}</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-10">
+        <div class="rounded-md shadow-lg w-fit bg-slate-200 p-3 mx-auto md:mx-0">
+            <h2 class="font-bold text-center">Berita Terbaru</h2>
+
+            <div class="px-3">
+                <ol class="list-decimal mt-4">
+                    @forelse ($latestPosts as $post)
+                        <li><a href="/dashboard/post/{{ $post->slug }}"
+                                class="hover:text-yellow-500 active:text-yellow-700 flex justify-between">
+                                <p class="mr-5">{{ $post->judul }}</p>
+                                <p>{{ $post->updated_at }}</p>
+                            </a>
+                        </li>
+                    @empty
+                        <p class="text-center">Tidak ada data yang dapat ditampilkan</p>
+                    @endforelse
+                </ol>
+            </div>
+        </div>
     </section>
 @endsection
 

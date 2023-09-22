@@ -60,4 +60,32 @@ class PublicInformationsController extends Controller
             'post' => $post,
         ]);
     }
+
+    public function showPMKP() {
+        return view('publicInformations.pmkp', [
+            'title'=> 'Informasi Publik',
+            'submenu' => 'PMKP',
+        ]);
+    }
+
+    public function showHealthArticle() {
+        return view('publicInformations.healthArticle', [
+            'title'=> 'Informasi Publik',
+            'submenu' => 'Artikel Kesehatan',
+        ]);
+    }
+
+    public function showSatisfactionSurvey() {
+        return view('publicInformations.satisfactionSurvey', [
+            'title'=> 'Informasi Publik',
+            'submenu' => 'Hasil Survei Kepuasan',
+        ]);
+    }
+
+    public function showCareer() {
+        return view('publicInformations.career', [
+            'title'=> 'Informasi Publik',
+            'submenu' => 'Karir',
+        ]);
+    }
 }

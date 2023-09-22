@@ -7,7 +7,7 @@
         <hr class="border-2 border-yellow-500 rounded-md mb-12">
 
         <div class="md:px-20 mb-12">
-            <table class="table-auto w-full mt-7">
+            <table class="table-auto w-full mt-7 text-sm">
                 <thead>
                     <tr class="text-center bg-yellow-400 font-semibold">
                         <td class="border border-black py-2">Nama Dokter</td>

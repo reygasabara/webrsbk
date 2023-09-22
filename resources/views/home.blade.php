@@ -9,23 +9,23 @@
 @section('container')
     @include('layouts.carousel')
 
-    <section class="relative hidden md:flex -top-16 z-10 text-slate-900 pl-5">
+    <section class="relative flex -top-5 md:-top-7 z-10 text-slate-900 pl-5">
         <div
-            class="rounded-xl bg-green-200 shadow-lg shadow-black/30 px-5 py-3 flex items-center text-slate-700 mr-8 animate__animated animate__zoomIn">
-            <i class="fa-solid fa-phone text-2xl mr-3"></i>
+            class="rounded-md md:rounded-xl bg-green-200 shadow-lg shadow-black/30 px-3 md:px-5 py-2 md:py-3 flex items-center text-slate-700 mr-3 md:mr-8 animate__animated animate__zoomIn">
+            <i class="fa-solid fa-phone text-xs md:text-2xl mr-3"></i>
             <div class="">
-                <h1 class="font-bold text-sm">Call Center</h1>
-                <p class="text-xs">+62 823 6060 7020</p>
+                <h1 class="font-bold text-[9px] md:text-sm">Call Center</h1>
+                <p class="text-[8px] md:text-xs">+62 823 6060 7020</p>
             </div>
         </div>
 
         <div
-            class="rounded-xl bg-green-200 shadow-lg shadow-black/30 px-5 py-3 flex items-center text-slate-700 animate__animated animate__zoomIn animate__delay-1s">
-            <i class="fa-solid fa-envelope text-2xl mr-3"></i>
+            class="rounded-md md:rounded-xl bg-green-200 shadow-lg shadow-black/30 px-3 md:px-5 py-2 md:py-3 flex items-center text-slate-700 animate__animated animate__zoomIn animate__delay-1s">
+            <i class="fa-solid fa-envelope text-xs md:text-2xl mr-3"></i>
             <div class="">
-                <h1 class="font-bold text-sm">Email</h1>
-                <a href="mailto:rumkitbhykendari@gmail.com"
-                    class="text-xs hover:text-green-700">rumkitbhykendari@gmail.com</a>
+                <h1 class="font-bold text-[9px] md:text-sm">Email</h1>
+                <p class="text-[8px] md:text-xs"><a href="mailto:rumkitbhykendari@gmail.com"
+                        class="text-[8px] md:text-xs hover:text-green-700">rumkitbhykendari@gmail.com</a></p>
             </div>
         </div>
     </section>
@@ -56,7 +56,8 @@
                         ipsum dolor, sit amet
                         consectetur adipisicing elit dier jighe skels jgeot.</p>
                     <button
-                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110">Lihat</button>
+                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110"><a
+                            href="{{ route('outpacient') }}">Lihat</a></button>
                 </div>
             </div>
 
@@ -78,7 +79,8 @@
                         ipsum dolor, sit amet
                         consectetur adipisicing elit dier jighe skels jgeot.</p>
                     <button
-                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110">Lihat</button>
+                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110"><a
+                            href="{{ route('inpacient') }}">Lihat</a></button>
                 </div>
             </div>
 
@@ -100,7 +102,8 @@
                         ipsum dolor, sit amet
                         consectetur adipisicing elit dier jighe skels jgeot.</p>
                     <button
-                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110">Lihat</button>
+                        class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60 hover:scale-110"><a
+                            href="{{ route('support') }}">Lihat</a></button>
                 </div>
             </div>
         </div>
@@ -154,7 +157,7 @@
             <div class="flex flex-wrap justify-around px-10 md:px-0">
                 @foreach ($posts as $post)
                     <div
-                        class="group mb-6 md:mb-0 w-full md:w-[32%] lg:w-[25%] rounded-md rounded-tl-[30px] rounded-br-[30px] shadow-md overflow-hidden md:hover:-translate-y-4 duration-500 bg-slate-100 p-3 flex-col justify-between items-stretch">
+                        class="group mb-6 md:mb-0 w-full md:w-[31%] lg:w-[25%] rounded-md rounded-tl-[30px] rounded-br-[30px] shadow-md overflow-hidden md:hover:-translate-y-4 duration-500 bg-slate-100 p-3 flex-col justify-between items-stretch">
                         <div class="overflow-hidden rounded-tl-[30px] rounded-br-[30px]">
                             <img src="{{ asset('storage/' . substr($post->foto, 7)) }}" alt="berita"
                                 class="w-full h-48 object-cover bg-slate-100 group-hover:scale-105 duration-200 group-hover:rotate-2 brightness-75 group-hover:brightness-100">
