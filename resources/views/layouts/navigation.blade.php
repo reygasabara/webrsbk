@@ -172,11 +172,13 @@
     <div class="relative flex items-center lg:hidden ml-4">
         <button id="hamburger" class="group block w-12 h-full px-2 duration-200" onclick="hamburgerButton()">
             <div
-                class="origin-top-left transform rotate-0 -translate-y-0 transition duration-300 ease-in-out h-1 bg-yellow-700 mb-1">
+                class="origin-top-left transform rotate-0 -translate-y-0 transition duration-300 ease-in-out h-1 bg-yellow-700 group-hover:bg-yellow-600 group-active:bg-yellow-800 mb-1">
             </div>
-            <div class="transition duration-300 ease-in-out h-1 bg-yellow-700 mb-1"></div>
             <div
-                class="origin-bottom-left transform -rotate-0 translate-y-0 transition duration-300 ease-in-out h-1 bg-yellow-700">
+                class="transition duration-300 ease-in-out h-1 bg-yellow-700 group-hover:bg-yellow-600 group-active:bg-yellow-800 mb-1">
+            </div>
+            <div
+                class="origin-bottom-left transform -rotate-0 translate-y-0 transition duration-300 ease-in-out h-1 bg-yellow-700 group-hover:bg-yellow-600 group-active:bg-yellow-800">
             </div>
         </button>
     </div>

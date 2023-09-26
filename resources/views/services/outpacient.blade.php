@@ -24,7 +24,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('urology') }}">Lihat</a></button>
         </div>
 
@@ -40,7 +40,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('eye') }}">Lihat</a></button>
         </div>
 
@@ -56,7 +56,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('tht') }}">Lihat</a></button>
         </div>
 
@@ -71,7 +71,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('skin') }}">Lihat</a></button>
         </div>
 
@@ -86,7 +86,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('heart') }}">Lihat</a></button>
         </div>
 
@@ -101,7 +101,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('child') }}">Lihat</a></button>
         </div>
 
@@ -116,7 +116,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('obgyn') }}">Lihat</a></button>
         </div>
 
@@ -131,7 +131,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('physiotherapy') }}">Lihat</a></button>
         </div>
 
@@ -146,7 +146,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('surgery') }}">Lihat</a></button>
         </div>
 
@@ -162,7 +162,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('nerve') }}">Lihat</a></button>
         </div>
 
@@ -175,7 +175,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('general') }}">Lihat</a></button>
         </div>
 
@@ -190,7 +190,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('orthopedy') }}">Lihat</a></button>
         </div>
 
@@ -203,7 +203,7 @@
                 </p>
             </div>
             <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-16 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
                     href="{{ route('tooth') }}">Lihat</a></button>
         </div>
     </section>

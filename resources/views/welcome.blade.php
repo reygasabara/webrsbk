@@ -1015,7 +1015,7 @@
     </div>
 
     <div class="rotate-45 -translate-y-1 translate-x-1 -ml-64 mt-32"></div>
-    <div class="ml-10 -rotate-45"></div>
+    <div class="ml-10 -rotate-45 bottom-0 right-0 left-0"></div>
 </body>
 
 </html>

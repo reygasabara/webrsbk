@@ -23,12 +23,12 @@
             </div>
         </div>
 
-        <div class="w-[30%]">
-            <img src="{{ asset('img/nevita.png') }}" alt="dokter mata" class="w-72 relative -right-16 -top-16">
+        <div class="md:w-[30%]">
+            <img src="{{ asset('img/hilal.png') }}" alt="dokter tht" class="w-72 relative -right-16 -top-16">
 
             <div
-                class="bg-yellow-300 text-slate-900 font-bold rounded-md shadow-md shadow-black/60 pl-6 pr-48 py-2 w-fit relative -right-16 -top-16">
-                <p>dr. Nevita</p>
+                class="bg-yellow-300 text-slate-900 font-bold rounded-md shadow-md shadow-black/60 pl-3 pr-6 py-2 w-fit relative -right-16 -top-16">
+                <p>dr. Nur Hilaliyah, SP.THT., M.Kes</p>
             </div>
         </div>
     </section>
