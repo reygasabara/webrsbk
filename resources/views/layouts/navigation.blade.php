@@ -15,8 +15,8 @@
             </li>
 
             <li class="group relative mr-5 text-center duration-300">
-                <a href="{{ route('profiles') }}"
-                    class="group-hover:text-yellow-500 {{ $title === 'Profil' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }}">Profil</a>
+                <button
+                    class="group-hover:text-yellow-500 {{ $title === 'Profil' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }}">Profil</button>
                 <div class="flex justify-center scale-0 group-hover:scale-100 duration-200">
                     <div class="absolute w-56 h-10"></div>
                     <ul class=" absolute rounded-md shadow-md py-3 px-5 w-56 bg-white top-10  origin-top duration-200">
@@ -29,20 +29,20 @@
                                 class="active:text-yellow-700 block {{ $submenu === 'Visi dan Misi' ? 'text-yellow-600 font-bold' : '' }}">Visi,
                                 Misi, dan Motto</a>
                         </li>
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        {{-- <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                             <a href="{{ route('structure') }}"
                                 class="active:text-yellow-700 block {{ $submenu === 'Struktur Organisasi' ? 'text-yellow-600 font-bold' : '' }}">Struktur
                                 Organisasi</a>
-                        </li>
+                        </li> --}}
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                             <a href="{{ route('sdm') }}"
                                 class="active:text-yellow-700 block {{ $submenu === 'SDM' ? 'text-yellow-600 font-bold' : '' }}">SDM</a>
                         </li>
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        {{-- <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                             <a href="{{ route('floorPlan') }}"
                                 class="active:text-yellow-700 block {{ $submenu === 'Denah Rumah Sakit' ? 'text-yellow-600 font-bold' : '' }}">Denah
                                 Rumah Sakit</a>
-                        </li>
+                        </li> --}}
                         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                             <a href="{{ route('logo') }}"
                                 class="active:text-yellow-700 block {{ $submenu === 'Logo' ? 'text-yellow-600 font-bold' : '' }}">Logo</a>
@@ -52,8 +52,8 @@
             </li>
 
             <li class="group relative mr-5 text-center duration-300">
-                <a href="{{ route('services') }}"
-                    class="group-hover:text-yellow-500 {{ $title === 'Pelayanan' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }}">Pelayanan</a>
+                <button
+                    class="group-hover:text-yellow-500 {{ $title === 'Pelayanan' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }}">Pelayanan</button>
                 <div class="flex justify-center scale-0 group-hover:scale-100 duration-200">
                     <div class="absolute w-56 h-10"></div>
                     <ul class=" absolute rounded-md shadow-md py-3 px-5 w-56 bg-white top-10  origin-top duration-200">
@@ -76,9 +76,9 @@
             </li>
 
             <li class="group relative mr-5 text-center duration-300">
-                <a href="{{ route('patientInformations') }}"
+                <button
                     class="group-hover:text-yellow-500 {{ $title === 'Informasi Pasien' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }}">Informasi
-                    Pasien</a>
+                    Pasien</button>
                 <div class="flex justify-center scale-0 group-hover:scale-100 duration-200">
                     <div class="absolute w-64 h-10"></div>
                     <ul class=" absolute rounded-md shadow-md py-3 px-5 w-64 bg-white top-10  origin-top duration-200">
@@ -113,7 +113,7 @@
                 </div>
             </li>
 
-            <li class="group relative mr-5 text-center duration-300">
+            {{-- <li class="group relative mr-5 text-center duration-300">
                 <a href="{{ route('publicInformations') }}"
                     class="group-hover:text-yellow-500 {{ $title === 'Informasi Publik' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }}">Informasi
                     Publik</a>
@@ -153,14 +153,13 @@
                                 class="active:text-yellow-700 block {{ $submenu === 'Hasil Survei Kepuasan' ? 'text-yellow-600 font-bold' : '' }}">Hasil
                                 Survei Kepuasan</a>
                         </li>
-                        <li
-                            class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                             <a href="{{ route('career') }}"
                                 class="active:text-yellow-700 block {{ $submenu === 'Karir' ? 'text-yellow-600 font-bold' : '' }}">Karir</a>
                         </li>
                     </ul>
                 </div>
-            </li>
+            </li> --}}
 
             <li
                 class="relative mr-5 text-center duration-300 hover:text-yellow-500 {{ $title === 'Kontak' ? 'text-yellow-600 font-bold' : '' }}">
@@ -206,23 +205,23 @@
                             class="fa-solid fa-angle-right"></i> Visi,
                         Misi, dan Motto</a>
                 </li>
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                {{-- <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                     <a href="{{ route('structure') }}"
                         class="active:text-yellow-700 block {{ $submenu === 'Struktur Organisasi' ? 'text-yellow-600 font-bold' : '' }}"><i
                             class="fa-solid fa-angle-right"></i> Struktur
                         Organisasi</a>
-                </li>
+                </li> --}}
                 <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                     <a href="{{ route('sdm') }}"
                         class="active:text-yellow-700 block {{ $submenu === 'SDM' ? 'text-yellow-600 font-bold' : '' }}"><i
                             class="fa-solid fa-angle-right"></i> SDM</a>
                 </li>
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                {{-- <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                     <a href="{{ route('floorPlan') }}"
                         class="active:text-yellow-700 block {{ $submenu === 'Denah Rumah Sakit' ? 'text-yellow-600 font-bold' : '' }}"><i
                             class="fa-solid fa-angle-right"></i> Denah
                         Rumah Sakit</a>
-                </li>
+                </li> --}}
                 <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                     <a href="{{ route('logo') }}"
                         class="active:text-yellow-700 block {{ $submenu === 'Logo' ? 'text-yellow-600 font-bold' : '' }}"><i
@@ -297,7 +296,7 @@
                 </li>
             </ul>
         </li>
-        <li class="border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+        {{-- <li class="border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
             <button
                 class="w-full text-left hover:text-yellow-500 active:text-yellow-700 block {{ $title === 'Informasi Publik' ? 'text-yellow-600 font-bold' : '' }}"
                 onclick="showSubmenu(this)">Informasi
@@ -350,7 +349,7 @@
                             class="fa-solid fa-angle-right"></i> Karir</a>
                 </li>
             </ul>
-        </li>
+        </li> --}}
         <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
             <a href="{{ route('contact') }}"
                 class="active:text-yellow-700 block {{ $title === 'Hubungi Kami' ? 'text-yellow-600 font-bold' : '' }}">Hubungi

@@ -1,8 +1,20 @@
-const bodyHeight = document.body.clientHeight;
-const windowHeight = window.innerHeight;
-
-if (bodyHeight < windowHeight) {
+const checkBodySize = () => {
+    const bodyHeight = document.body.clientHeight;
+    const windowHeight = window.innerHeight;
     const footer = document.getElementById("footer");
-    footer.classList.replace("relative", "fixed");
-    footer.classList.add("bottom-0", "right-0", "left-0");
-}
+    console.log("cek tinggi ...");
+
+    if (bodyHeight <= windowHeight) {
+        console.log("footer fixed");
+        footer.classList.replace("relative", "fixed");
+        footer.classList.add("bottom-0");
+    } else {
+        console.log("footer relatif");
+        footer.classList.replace("fixed", "relative");
+        footer.classList.remove("bottom-0");
+    }
+};
+
+checkBodySize();
+
+window.addEventListener("resize", checkBodySize);

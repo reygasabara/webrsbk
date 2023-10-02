@@ -205,7 +205,7 @@
             <div class="flex justify-end px-5 mt-4">
                 <button
                     class="group/button mt-3 relative rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-400  active:from-yellow-500 active:to-green-600 duration-300 transition-colors px-3.5 text-sm capitalize text-white shadow shadow-black/60 mb-4 overflow-hidden w-56 h-10 flex items-center justify-center">
-                    <a href="/"
+                    <a href="{{ route('registrationFlow') }}"
                         class="absolute z-10 peer w-full h-full flex items-center justify-center tracking-wide">Alur
                         Pendaftaran Lainnya <i class="fa-solid fa-angles-right ml-2"></i></a>
                     <div

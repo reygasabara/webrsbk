@@ -52,7 +52,7 @@
                 <img src="{{ asset('img/wayan.png') }}" alt="dokter bedah umum" class="w-40 lg:w-60 z-10 relative">
 
                 <div
-                    class="bg-yellow-300 text-slate-900 font-bold rounded-md shadow-md shadow-black/60 w-64 lg:w-[360px] pl-4 py-2 relative z-20">
+                    class="bg-yellow-300 text-slate-900 font-bold rounded-md shadow-md shadow-black/60 w-64 lg:w-[360px] pl-4 py-2 relative z-20 text-sm md:text-xs lg:text-sm">
                     <p class="">dr. Wayan Eka Winarka, M.Biomed.,Sp.B</p>
                 </div>
 

@@ -22,10 +22,10 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.2326975627593!2d122.50542297420566!3d-3.972448044460692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98ecde085619e3%3A0x5d4c17a67bded53e!2sRumah%20Sakit%20Bhayangkara%20Kendari!5e0!3m2!1sid!2sid!4v1692882814809!5m2!1sid!2sid"
                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    class="w-full md:w-[50%] lg:w-[65%] h-[450px] rounded-xl shadow-xl order-2 md:order-1"
+                    class="w-full md:w-[50%] lg:w-[65%] h-[505px] rounded-xl shadow-xl order-2 md:order-1"
                     data-aos="zoom-in-up"></iframe>
 
-                <div class="w-full md:w-[45%] lg:w-[30%] mb-9 md:mb-0 h-[450px] rounded-xl shadow-xl bg-slate-100 p-3 order-1 md:order-2"
+                <div class="w-full md:w-[45%] lg:w-[30%] mb-9 md:mb-0 h-[505px] rounded-xl shadow-xl bg-slate-100 p-3 order-1 md:order-2"
                     data-aos="zoom-in-up">
                     <div class="overflow-hidden rounded-md">
                         <img src="img/rsbk.jpg" alt="example"
@@ -51,7 +51,20 @@
                                 class="text-sm text-justify hover:text-yellow-600 active:text-yellow-700 duration-200">rumkitbhykendari@gmail.com</a>
                         </div>
                         <div class="mt-3 flex items-center">
-                            <i class="fa-brands fa-instagram mr-3 text-yellow-500"></i>
+                            <i class="fa-brands fa-facebook mr-3 text-yellow-500"></i>
+                            <a href="https://www.facebook.com/profile.php?id=100075551007451/" target="_blank"
+                                target="_blank"
+                                class="text-sm text-justify hover:text-yellow-600 active:text-yellow-700 duration-200">RS.
+                                Bhayangkara Kendari</a>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <i class="fa-brands fa-youtube mr-[10px] text-yellow-500"></i>
+                            <a href="https://www.youtube.com/@rsbhayangkarakendari8014" target="_blank"
+                                class="text-sm text-justify hover:text-yellow-600 active:text-yellow-700 duration-200">RS
+                                Bhayangkara Kendari</a>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <i class="fa-brands fa-instagram mr-[14px] text-yellow-500"></i>
                             <a href="https://www.instagram.com/rs.bhayangkara.kendari/" target="_blank"
                                 class="text-sm text-justify hover:text-yellow-600 active:text-yellow-700 duration-200">rs.bhayangkara.kendari</a>
                         </div>
@@ -61,7 +74,7 @@
         </section>
     </section>
 
-    <section class="mb-12">
+    {{-- <section class="mb-12">
         <div class="relative mb-12 flex justify-center items-center" data-aos="fade-right">
             <hr class="w-10 mr-5 border-2 border-yellow-700 rounded-md">
             <h2 class="text-center font-bold text-2xl md:text-4xl">Form Laporan</h2>
@@ -108,7 +121,7 @@
                     class="fa-solid fa-paper-plane mr-1"></i> Kirim</button>
 
         </form>
-    </section>
+    </section> --}}
 @endsection
 
 @section('scripts')

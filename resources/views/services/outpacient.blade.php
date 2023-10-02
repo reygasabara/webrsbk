@@ -23,9 +23,8 @@
                 <p class="italic mb-4 text-sm">Menangani penyakit yang berkaitan dengan gangguan saluran kemih
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('urology') }}">Lihat</a></button>
+            <a href="{{ route('urology') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
 
         <div
@@ -39,9 +38,8 @@
                 <p class="italic mb-4 text-sm">Menangani penyakit yang berkaitan dengan gangguan penglihatan
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('eye') }}">Lihat</a></button>
+            <a href="{{ route('eye') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
 
         <div
@@ -55,9 +53,8 @@
                     tenggorokan
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('tht') }}">Lihat</a></button>
+            <a href="{{ route('tht') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
 
         <div
@@ -70,9 +67,8 @@
                 <p class="italic mb-4 text-sm">Menangani penyakit yang berkaitan dengan gangguan pada kulit dan kelamin
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('skin') }}">Lihat</a></button>
+            <a href="{{ route('skin') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
 
         <div
@@ -85,9 +81,8 @@
                 <p class="italic mb-4 text-sm">Menangani penyakit yang berkaitan dengan gangguan pada jantung
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('heart') }}">Lihat</a></button>
+            <a href="{{ route('heart') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
 
         <div
@@ -100,9 +95,9 @@
                 <p class="italic mb-7 text-sm">Menangani pemeriksaan dan pengobatan pada anak
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('child') }}">Lihat</a></button>
+            <a href="{{ route('child') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">
+                Lihat</a>
         </div>
 
         <div
@@ -115,9 +110,8 @@
                 <p class="italic mb-4 text-sm">Menangani pemeriksaan kesehatan pada reproduksi dan kehamilan
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('obgyn') }}">Lihat</a></button>
+            <a href="{{ route('obgyn') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
 
         <div
@@ -130,9 +124,8 @@
                 <p class="italic mb-4 text-sm">Membantu memulihkan kondisi fisik setelah mengalami cedera atau penyakit
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('physiotherapy') }}">Lihat</a></button>
+            <a href="{{ route('physiotherapy') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
 
         <div
@@ -145,9 +138,8 @@
                 <p class="italic mb-7 text-sm">Menangani pengobatan penyakit dan luka
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('surgery') }}">Lihat</a></button>
+            <a href="{{ route('surgery') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
 
         <div
@@ -161,9 +153,8 @@
                     saraf
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('nerve') }}">Lihat</a></button>
+            <a href="{{ route('nerve') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
 
         <div
@@ -174,9 +165,8 @@
                 <p class="italic mb-4 text-sm">Menangani pemeriksaan kesehatan dan pengobatan secara umum
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('general') }}">Lihat</a></button>
+            <a href="{{ route('general') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
 
         <div
@@ -189,9 +179,8 @@
                 <p class="italic mb-7 text-sm">Menangani pemeriksaan kesehatan pada tulang
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('orthopedy') }}">Lihat</a></button>
+            <a href="{{ route('orthopedy') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
 
         <div
@@ -202,9 +191,8 @@
                 <p class="italic mb-4 text-sm">Menangani pemeriksaan kesehatan yang berkaitan dengan gigi
                 </p>
             </div>
-            <button
-                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110"><a
-                    href="{{ route('tooth') }}">Lihat</a></button>
+            <a href="{{ route('tooth') }}"
+                class="rounded-full bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 duration-300 py-2 px-3.5 text-xs capitalize text-white w-fit mx-auto block translate-y-20 group-hover:translate-y-0 shadow shadow-black/60 hover:scale-110">Lihat</a>
         </div>
     </section>
 @endsection
