@@ -20,7 +20,7 @@
     {{-- SideNavbar --}}
     @include('dashboard.layouts.sidenav')
 
-    <main id="main" class="md:ml-64 mt-28 px-3 md:px-12 duration-500">
+    <main id="main" class="mt-28 px-3 duration-500 lg:ml-80 lg:px-12">
         {{-- Container --}}
         @yield('container')
 

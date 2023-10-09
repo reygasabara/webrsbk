@@ -1,32 +1,32 @@
-<nav class="fixed top-0 bg-slate-300 w-full px-5 flex justify-between z-50">
+<nav class="fixed top-0 z-50 flex w-full justify-between bg-slate-300 px-5">
     <div class="flex items-center py-4">
         <img src="{{ asset('img/logo.png') }}" alt="logo" class="w-8 lg:w-14">
         <div class="pl-3 lg:pl-5">
-            <h1 class="font-bold text-sm lg:text-2xl text-yellow-700">RS BHAYANGKARA KENDARI</h1>
-            <p class="italic text-[9px] lg:text-base lg:text-center">Humanis dan Prima dalam pelayanan</p>
+            <h1 class="text-sm font-bold text-yellow-700 lg:text-2xl">RS BHAYANGKARA KENDARI</h1>
+            <p class="text-[9px] italic lg:text-center lg:text-base">Humanis dan Prima dalam pelayanan</p>
         </div>
     </div>
 
-    <div class="hidden lg:flex items-center">
+    <div class="hidden items-center lg:flex">
         <ul class="flex">
             <li
-                class="relative mr-5 text-center duration-300 hover:text-yellow-500 {{ $title === 'Beranda' ? 'text-yellow-600 font-bold' : '' }}">
+                class="{{ $title === 'Beranda' ? 'text-yellow-600 font-bold' : '' }} relative mr-5 text-center duration-300 hover:text-yellow-500">
                 <a href="/" class="active:text-yellow-700">Beranda</a>
             </li>
 
             <li class="group relative mr-5 text-center duration-300">
                 <button
-                    class="group-hover:text-yellow-500 {{ $title === 'Profil' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }}">Profil</button>
-                <div class="flex justify-center scale-0 group-hover:scale-100 duration-200">
-                    <div class="absolute w-56 h-10"></div>
-                    <ul class=" absolute rounded-md shadow-md py-3 px-5 w-56 bg-white top-10  origin-top duration-200">
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                    class="{{ $title === 'Profil' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }} group-hover:text-yellow-500">Profil</button>
+                <div class="flex scale-0 justify-center duration-200 group-hover:scale-100">
+                    <div class="absolute h-10 w-56"></div>
+                    <ul class="absolute top-10 w-56 origin-top rounded-md bg-white px-5 py-3 shadow-md duration-200">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('history') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Sejarah' ? 'text-yellow-600  font-bold' : '' }}">Sejarah</a>
+                                class="{{ $submenu === 'Sejarah' ? 'text-yellow-600  font-bold' : '' }} block active:text-yellow-700">Sejarah</a>
                         </li>
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('visiMisi') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Visi dan Misi' ? 'text-yellow-600 font-bold' : '' }}">Visi,
+                                class="{{ $submenu === 'Visi dan Misi' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Visi,
                                 Misi, dan Motto</a>
                         </li>
                         {{-- <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
@@ -34,18 +34,18 @@
                                 class="active:text-yellow-700 block {{ $submenu === 'Struktur Organisasi' ? 'text-yellow-600 font-bold' : '' }}">Struktur
                                 Organisasi</a>
                         </li> --}}
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('sdm') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'SDM' ? 'text-yellow-600 font-bold' : '' }}">SDM</a>
+                                class="{{ $submenu === 'SDM' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">SDM</a>
                         </li>
                         {{-- <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
                             <a href="{{ route('floorPlan') }}"
                                 class="active:text-yellow-700 block {{ $submenu === 'Denah Rumah Sakit' ? 'text-yellow-600 font-bold' : '' }}">Denah
                                 Rumah Sakit</a>
                         </li> --}}
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('logo') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Logo' ? 'text-yellow-600 font-bold' : '' }}">Logo</a>
+                                class="{{ $submenu === 'Logo' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Logo</a>
                         </li>
                     </ul>
                 </div>
@@ -53,23 +53,23 @@
 
             <li class="group relative mr-5 text-center duration-300">
                 <button
-                    class="group-hover:text-yellow-500 {{ $title === 'Pelayanan' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }}">Pelayanan</button>
-                <div class="flex justify-center scale-0 group-hover:scale-100 duration-200">
-                    <div class="absolute w-56 h-10"></div>
-                    <ul class=" absolute rounded-md shadow-md py-3 px-5 w-56 bg-white top-10  origin-top duration-200">
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                    class="{{ $title === 'Pelayanan' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }} group-hover:text-yellow-500">Pelayanan</button>
+                <div class="flex scale-0 justify-center duration-200 group-hover:scale-100">
+                    <div class="absolute h-10 w-56"></div>
+                    <ul class="absolute top-10 w-56 origin-top rounded-md bg-white px-5 py-3 shadow-md duration-200">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('outpacient') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Rawat Jalan' ? 'text-yellow-600 font-bold' : '' }}">Rawat
+                                class="{{ $submenu === 'Rawat Jalan' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Rawat
                                 Jalan</a>
                         </li>
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('inpacient') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Rawat Inap' ? 'text-yellow-600 font-bold' : '' }}">Rawat
+                                class="{{ $submenu === 'Rawat Inap' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Rawat
                                 Inap</a>
                         </li>
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('support') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }}">Penunjang</a>
+                                class="{{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Penunjang</a>
                         </li>
                     </ul>
                 </div>
@@ -77,36 +77,34 @@
 
             <li class="group relative mr-5 text-center duration-300">
                 <button
-                    class="group-hover:text-yellow-500 {{ $title === 'Informasi Pasien' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }}">Informasi
+                    class="{{ $title === 'Informasi Pasien' ? 'text-yellow-600 group-active:text-yellow-700 font-bold' : '' }} group-hover:text-yellow-500">Informasi
                     Pasien</button>
-                <div class="flex justify-center scale-0 group-hover:scale-100 duration-200">
-                    <div class="absolute w-64 h-10"></div>
-                    <ul class=" absolute rounded-md shadow-md py-3 px-5 w-64 bg-white top-10  origin-top duration-200">
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                <div class="flex scale-0 justify-center duration-200 group-hover:scale-100">
+                    <div class="absolute h-10 w-64"></div>
+                    <ul class="absolute top-10 w-64 origin-top rounded-md bg-white px-5 py-3 shadow-md duration-200">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('doctorSchedule') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Jadwal Dokter' ? 'text-yellow-600 font-bold' : '' }}">Jadwal
+                                class="{{ $submenu === 'Jadwal Dokter' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Jadwal
                                 Dokter</a>
                         </li>
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('bedInformation') }}"
-                                class="active:text-yellow-700
-                                block
-                                {{ $submenu === 'Informasi Tempat Tidur' ? 'text-yellow-600 font-bold' : '' }}">Informasi
+                                class="{{ $submenu === 'Informasi Tempat Tidur' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Informasi
                                 Tempat Tidur</a>
                         </li>
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('registrationFlow') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Alur Pendaftaran' ? 'text-yellow-600 font-bold' : '' }}">Alur
+                                class="{{ $submenu === 'Alur Pendaftaran' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Alur
                                 Pendaftaran</a>
                         </li>
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('JKNregistrationFlow') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Alur Pendaftaran Via JKN' ? 'text-yellow-600 font-bold' : '' }}">Alur
+                                class="{{ $submenu === 'Alur Pendaftaran Via JKN' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Alur
                                 Pendaftaran Via JKN<a />
                         </li>
-                        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                             <a href="{{ route('complaintProcedure') }}"
-                                class="active:text-yellow-700 block {{ $submenu === 'Prosedur Komplain' ? 'text-yellow-600 font-bold' : '' }}">Prosedur
+                                class="{{ $submenu === 'Prosedur Komplain' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Prosedur
                                 Komplain</a>
                         </li>
                     </ul>
@@ -162,46 +160,46 @@
             </li> --}}
 
             <li
-                class="relative mr-5 text-center duration-300 hover:text-yellow-500 {{ $title === 'Kontak' ? 'text-yellow-600 font-bold' : '' }}">
+                class="{{ $title === 'Hubungi Kami' ? 'text-yellow-600 font-bold' : '' }} relative mr-5 text-center duration-300 hover:text-yellow-500">
                 <a href="{{ route('contact') }}" class="active:text-yellow-700">Hubungi Kami</a>
             </li>
         </ul>
     </div>
 
-    <div class="relative flex items-center lg:hidden ml-4">
-        <button id="hamburger" class="group block w-12 h-full px-2 duration-200" onclick="hamburgerButton()">
+    <div class="relative ml-4 flex items-center lg:hidden">
+        <button id="hamburger" class="group block h-full w-12 px-2 duration-200" onclick="hamburgerButton()">
             <div
-                class="origin-top-left transform rotate-0 -translate-y-0 transition duration-300 ease-in-out h-1 bg-yellow-700 group-hover:bg-yellow-600 group-active:bg-yellow-800 mb-1">
+                class="mb-1 h-1 origin-top-left -translate-y-0 rotate-0 transform bg-yellow-700 transition duration-300 ease-in-out group-hover:bg-yellow-600 group-active:bg-yellow-800">
             </div>
             <div
-                class="transition duration-300 ease-in-out h-1 bg-yellow-700 group-hover:bg-yellow-600 group-active:bg-yellow-800 mb-1">
+                class="mb-1 h-1 bg-yellow-700 transition duration-300 ease-in-out group-hover:bg-yellow-600 group-active:bg-yellow-800">
             </div>
             <div
-                class="origin-bottom-left transform -rotate-0 translate-y-0 transition duration-300 ease-in-out h-1 bg-yellow-700 group-hover:bg-yellow-600 group-active:bg-yellow-800">
+                class="h-1 origin-bottom-left translate-y-0 -rotate-0 transform bg-yellow-700 transition duration-300 ease-in-out group-hover:bg-yellow-600 group-active:bg-yellow-800">
             </div>
         </button>
     </div>
 
     <ul id="navPopUp"
-        class="absolute rounded-md shadow-md py-3 px-5 bg-white scale-0 top-[66px] -z-50 w-full left-0 origin-top duration-200">
-        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+        class="absolute left-0 top-[66px] -z-50 w-full origin-top scale-0 rounded-md bg-white px-5 py-3 shadow-md duration-200">
+        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
             <a href="/"
-                class="active:text-yellow-700 block {{ $title === 'Beranda' ? 'text-yellow-600 font-bold' : '' }}">Beranda</a>
+                class="{{ $title === 'Beranda' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Beranda</a>
         </li>
-        <li class="border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700">
             <button
-                class="w-full text-left hover:text-yellow-500 active:text-yellow-700 block {{ $title === 'Profil' ? 'text-yellow-600 font-bold' : '' }}"
+                class="{{ $title === 'Profil' ? 'text-yellow-600 font-bold' : '' }} block w-full text-left hover:text-yellow-500 active:text-yellow-700"
                 onclick="showSubmenu(this)">Profil</button>
 
-            <ul class="submenu h-0 overflow-hidden px-5 bg-white origin-top duration-200">
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+            <ul class="submenu h-0 origin-top overflow-hidden bg-white px-5 duration-200">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('history') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Sejarah' ? 'text-yellow-600  font-bold' : '' }}"><i
+                        class="{{ $submenu === 'Sejarah' ? 'text-yellow-600  font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Sejarah</a>
                 </li>
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('visiMisi') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Visi dan Misi' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="{{ $submenu === 'Visi dan Misi' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Visi,
                         Misi, dan Motto</a>
                 </li>
@@ -211,9 +209,9 @@
                             class="fa-solid fa-angle-right"></i> Struktur
                         Organisasi</a>
                 </li> --}}
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('sdm') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'SDM' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="{{ $submenu === 'SDM' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> SDM</a>
                 </li>
                 {{-- <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
@@ -222,75 +220,73 @@
                             class="fa-solid fa-angle-right"></i> Denah
                         Rumah Sakit</a>
                 </li> --}}
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('logo') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Logo' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="{{ $submenu === 'Logo' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Logo</a>
                 </li>
             </ul>
 
         </li>
-        <li class="border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700">
             <button
-                class="w-full text-left hover:text-yellow-500 active:text-yellow-700 block {{ $title === 'Pelayanan' ? 'text-yellow-600 font-bold' : '' }}"
+                class="{{ $title === 'Pelayanan' ? 'text-yellow-600 font-bold' : '' }} block w-full text-left hover:text-yellow-500 active:text-yellow-700"
                 onclick="showSubmenu(this)">Pelayanan</button>
 
-            <ul class="submenu h-0 overflow-hidden px-5 bg-white origin-top duration-200">
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+            <ul class="submenu h-0 origin-top overflow-hidden bg-white px-5 duration-200">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('outpacient') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Rawat Jalan' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="{{ $submenu === 'Rawat Jalan' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Rawat
                         Jalan</a>
                 </li>
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('inpacient') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Rawat Inap' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="{{ $submenu === 'Rawat Inap' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Rawat
                         Inap</a>
                 </li>
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('support') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="{{ $submenu === 'Penunjang' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Penunjang</a>
                 </li>
             </ul>
         </li>
-        <li class="border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700">
             <button
-                class="w-full text-left hover:text-yellow-500 active:text-yellow-700 block {{ $title === 'Informasi Pasien' ? 'text-yellow-600 font-bold' : '' }}"
+                class="{{ $title === 'Informasi Pasien' ? 'text-yellow-600 font-bold' : '' }} block w-full text-left hover:text-yellow-500 active:text-yellow-700"
                 onclick="showSubmenu(this)">Informasi
                 Pasien</button>
 
-            <ul class="submenu h-0 overflow-hidden px-5 bg-white origin-top duration-200">
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+            <ul class="submenu h-0 origin-top overflow-hidden bg-white px-5 duration-200">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('doctorSchedule') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Jadwal Dokter' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="{{ $submenu === 'Jadwal Dokter' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Jadwal
                         Dokter</a>
                 </li>
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('bedInformation') }}"
-                        class="active:text-yellow-700
-                            block
-                            {{ $submenu === 'Informasi Tempat Tidur' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="{{ $submenu === 'Informasi Tempat Tidur' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Informasi
                         Tempat Tidur</a>
                 </li>
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('registrationFlow') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Alur Pendaftaran' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="{{ $submenu === 'Alur Pendaftaran' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Alur
                         Pendaftaran</a>
                 </li>
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('JKNregistrationFlow') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Alur Pendaftaran Via JKN' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="{{ $submenu === 'Alur Pendaftaran Via JKN' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Alur
                         Pendaftaran Via JKN<a />
                 </li>
-                <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+                <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
                     <a href="{{ route('complaintProcedure') }}"
-                        class="active:text-yellow-700 block {{ $submenu === 'Prosedur Komplain' ? 'text-yellow-600 font-bold' : '' }}"><i
+                        class="{{ $submenu === 'Prosedur Komplain' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Prosedur
                         Komplain</a>
                 </li>
@@ -350,9 +346,9 @@
                 </li>
             </ul>
         </li> --}}
-        <li class="hover:text-yellow-500 border-y-2 border-y-white hover:border-y-yellow-700 leading-7">
+        <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
             <a href="{{ route('contact') }}"
-                class="active:text-yellow-700 block {{ $title === 'Hubungi Kami' ? 'text-yellow-600 font-bold' : '' }}">Hubungi
+                class="{{ $title === 'Hubungi Kami' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Hubungi
                 Kami</a>
         </li>
     </ul>

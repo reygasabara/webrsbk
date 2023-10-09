@@ -1,29 +1,29 @@
 <button id="hamburger"
-    class="fixed w-full md:w-auto text-left bg-white hover:text-slate-500 active:text-slate-900 z-10 top-20 ml-1 translate-x-0 text-3xl duration-200 px-2 rounded-md">
+    class="fixed top-20 z-10 ml-1 w-full translate-x-0 rounded-md bg-white px-2 text-left text-3xl duration-200 hover:text-slate-500 active:text-slate-900 md:w-auto">
     <i class="fa-solid fa-bars"></i>
-    <div class="absolute md:hidden bg-white -top-3 w-full h-4"></div>
+    <div class="absolute -top-3 h-4 w-full bg-white md:hidden"></div>
 </button>
 <nav id="sidenav"
-    class="fixed z-10 -ml-0 duration-500 top-16 h-screen w-64 bg-slate-900 text-slate-100 py-7 px-4 text-xl ">
+    class="fixed top-16 z-10 -ml-0 h-screen w-64 bg-slate-900 px-4 py-7 text-xl text-slate-100 shadow-2xl shadow-black duration-500">
 
-    <div class="flex justify-end items-center mb-5 font-bold">
+    <div class="mb-5 flex items-center justify-end font-bold">
         <button id="closeButton"
-            class="rounded-lg p-4 hover:bg-slate-500 hover:text-slate-50 active:bg-slate-400 active:text-slate-800 duration-200 text-2xl w-6 h-6 flex items-center justify-center">
+            class="flex h-6 w-6 items-center justify-center rounded-lg p-4 text-2xl duration-200 hover:bg-slate-500 hover:text-slate-50 active:bg-slate-400 active:text-slate-800">
             <i class="fa-solid fa-xmark"></i>
         </button>
     </div>
-    <div class="flex flex-col justify-between items-stretch h-[85%]">
+    <div class="flex h-[85%] flex-col items-stretch justify-between">
         <ul class="">
             <li class="mb-2">
                 <a href="{{ route('dashboard') }}"
-                    class="w-full h-full flex items-center py-1 px-3 hover:bg-slate-400 hover:text-slate-100 active:bg-slate-500 rounded-md duration-200 {{ Request::is('dashboard') ? 'text-yellow-400' : '' }}">
+                    class="{{ Request::is('dashboard') ? 'text-yellow-400' : '' }} flex h-full w-full items-center rounded-md px-3 py-1 duration-200 hover:bg-slate-400 hover:text-slate-100 active:bg-slate-500">
                     <i class="bx bxs-dashboard mr-4"></i>
                     Dashboard
                 </a>
             </li>
             <li class="mb-2">
                 <a href="{{ url('dashboard/post') }}"
-                    class="w-full h-full flex items-center py-1 px-3 hover:bg-slate-400 hover:text-slate-100 active:bg-slate-500 rounded-md duration-200 {{ Request::is('dashboard/post*') ? 'text-yellow-400' : '' }}">
+                    class="{{ Request::is('dashboard/post*') ? 'text-yellow-400' : '' }} flex h-full w-full items-center rounded-md px-3 py-1 duration-200 hover:bg-slate-400 hover:text-slate-100 active:bg-slate-500">
                     <i class="bx bxs-news mr-4"></i>
                     Post
                 </a>
@@ -31,10 +31,10 @@
         </ul>
 
         <ul class="">
-            <hr class="border border-slate-100/25 mb-4">
+            <hr class="mb-4 border border-slate-100/25">
             <li class="mb-2">
                 <a href="{{ route('logout') }}"
-                    class="w-full h-full flex items-center py-1 px-3 hover:bg-slate-400 active:bg-slate-500 rounded-md duration-200">
+                    class="flex h-full w-full items-center rounded-md px-3 py-1 duration-200 hover:bg-slate-400 active:bg-slate-500">
                     <i class="bx bx-log-out bx-flip-horizontal mr-4"></i>
                     Logout
                 </a>

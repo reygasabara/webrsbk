@@ -1,8 +1,9 @@
 <section>
-    <video autoplay loop muted class="w-full h-56 md:h-96 lg:h-[500px] object-cover">
-        <source src="{{ asset('video/intro.mp4') }}" type="video/mp4">
-        Your browser does not support the video tag.
+    <video autoplay muted loop playsinline class="lazy h-56 w-full object-cover md:h-96 lg:h-[500px]">
+        <source src="{{ asset('video/intro2.mp4') }}" type="video/mp4" preload="auto">
+        Maaf, browser Anda tidak mendukung pemutar video.
     </video>
+
     {{-- <div class="owl-carousel owl-theme">
         <div class="item">
             <div style="background-image: url({{ asset('img/rsbk.jpg') }})"

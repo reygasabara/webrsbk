@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('container')
-    <section class="py-12 mx-6 ">
-        <h1 class="text-2xl md:text-4xl font-bold mb-2 animate__animated animate__lightSpeedInLeft inline-block">
+    <section class="mx-6 py-12">
+        <h1 class="animate__animated animate__lightSpeedInLeft mb-2 inline-block text-2xl font-bold md:text-4xl">
             {{ $submenu }}</h1>
-        <hr class="border-2 border-yellow-500 rounded-md mb-12">
+        <hr class="mb-12 rounded-md border-2 border-yellow-500">
 
-        <div class="md:px-20 mb-12">
-            <table class="table-auto w-full mt-7 text-sm">
+        <div class="mb-12 md:px-20">
+            <table class="mt-7 w-full table-auto text-sm">
                 <thead>
-                    <tr class="text-center bg-yellow-400 font-semibold">
+                    <tr class="bg-yellow-400 text-center font-semibold">
                         <td class="border border-black py-2">Kelas Kamar</td>
                         <td class="border border-black py-2">Jumlah Bed</td>
                         <td class="border border-black py-2">Bed Terisi</td>
@@ -58,4 +58,8 @@
             </table>
         </div>
     </section>
+@endsection
+
+@section('scripts')
+    <script src="{{ asset('js/components/heightCheck.js') }}"></script>
 @endsection

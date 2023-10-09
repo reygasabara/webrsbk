@@ -39,3 +39,9 @@ const showSubmenu = (element) => {
         }
     }
 };
+
+// document.addEventListener('click', (e) => {
+//     if (!popup.contains(e.target) && e.target !== openButton) {
+//       closePopup();
+//     }
+// });

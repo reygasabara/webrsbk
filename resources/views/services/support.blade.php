@@ -29,24 +29,21 @@
                 class="mx-auto block w-fit translate-y-20 rounded-full bg-yellow-500 px-3.5 py-2 text-xs capitalize text-white shadow shadow-black/60 duration-300 hover:scale-110 hover:bg-yellow-600 active:bg-yellow-700 group-hover:translate-y-0">Lihat</a> --}}
         </div>
 
-        <div
+        {{-- <div
             class="animate__animated animate__zoomIn animate__delay-1s group mx-10 mb-16 w-full overflow-hidden rounded-md bg-white p-5 text-center shadow-md duration-200 hover:scale-105 hover:rounded-br-[50px] hover:rounded-tl-[50px] md:w-[40%] lg:w-[40%]">
             <div class="translate-y-5 duration-200 group-hover:translate-y-0">
                 <i class="fa-solid fa-bed-pulse mb-6 text-5xl"></i>
-                {{-- <span class="material-symbols-outlined text-6xl mb-2">
-                    ophthalmology
-                </span> --}}
                 <h2 class="mb-4 text-xl font-bold">ICU</h2>
                 <p class="mb-8 text-sm italic">Intensive Care Unit (ICU) adalah ruangan khusus yang digunakan untuk merawat
                     pasien yang memerlukan pemantauan intensif.
                 </p>
             </div>
-            {{-- <a href="{{ route('eye') }}"
-                class="mx-auto block w-fit translate-y-20 rounded-full bg-yellow-500 px-3.5 py-2 text-xs capitalize text-white shadow shadow-black/60 duration-300 hover:scale-110 hover:bg-yellow-600 active:bg-yellow-700 group-hover:translate-y-0">Lihat</a> --}}
-        </div>
+            <a href="{{ route('eye') }}"
+                class="mx-auto block w-fit translate-y-20 rounded-full bg-yellow-500 px-3.5 py-2 text-xs capitalize text-white shadow shadow-black/60 duration-300 hover:scale-110 hover:bg-yellow-600 active:bg-yellow-700 group-hover:translate-y-0">Lihat</a>
+        </div> --}}
 
         <div
-            class="animate__animated animate__zoomIn animate__delay-2s group mx-10 mb-16 w-full overflow-hidden rounded-md bg-white p-5 text-center shadow-md duration-200 hover:scale-105 hover:rounded-br-[50px] hover:rounded-tl-[50px] md:w-[40%] lg:w-[40%]">
+            class="animate__animated animate__zoomIn animate__delay-1s group mx-10 mb-16 w-full overflow-hidden rounded-md bg-white p-5 text-center shadow-md duration-200 hover:scale-105 hover:rounded-br-[50px] hover:rounded-tl-[50px] md:w-[40%] lg:w-[40%]">
             <div class="translate-y-5 duration-200 group-hover:translate-y-0">
                 <span class="material-symbols-outlined mb-2 text-6xl">
                     science
@@ -76,13 +73,14 @@
         </div>
 
         <div
-            class="animate__animated animate__zoomIn group mx-10 mb-16 w-full overflow-hidden rounded-md bg-white p-5 text-center shadow-md duration-200 hover:scale-105 hover:rounded-br-[50px] hover:rounded-tl-[50px] md:w-[40%] lg:w-[40%]">
+            class="animate__animated animate__zoomIn animate__delay-1s group mx-10 mb-16 w-full overflow-hidden rounded-md bg-white p-5 text-center shadow-md duration-200 hover:scale-105 hover:rounded-br-[50px] hover:rounded-tl-[50px] md:w-[40%] lg:w-[40%]">
             <div class="translate-y-5 duration-200 group-hover:translate-y-0">
                 <span class="material-symbols-outlined mb-2 text-6xl">
                     medication
                 </span>
                 <h2 class="mb-5 text-xl font-bold">CSSD</h2>
-                <p class="mb-8 text-sm italic">CSSD (Central Sterile Supply Departement) merupakan
+                <p class="mb-8 text-sm italic">CSSD (Central Sterile Supply Departement) merupakan instalasi yang memberikan
+                    pelayanan terkait dengan pencucian dan distribusi alat yang disterilkan di rumah sakit.
             </div>
             {{-- <a href="{{ route('skin') }}"
                 class="mx-auto block w-fit translate-y-20 rounded-full bg-yellow-500 px-3.5 py-2 text-xs capitalize text-white shadow shadow-black/60 duration-300 hover:scale-110 hover:bg-yellow-600 active:bg-yellow-700 group-hover:translate-y-0">Lihat</a> --}}
