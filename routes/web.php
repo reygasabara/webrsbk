@@ -46,7 +46,9 @@ Route::get('/pelayanan/rawat-jalan/poli-bedah-umum', [OutpacientController::clas
 Route::get('/pelayanan/rawat-jalan/poli-saraf', [OutpacientController::class, 'showNervePoly'])->name('nerve');
 Route::get('/pelayanan/rawat-jalan/poli-umum', [OutpacientController::class, 'showGeneralPoly'])->name('general');
 Route::get('/pelayanan/rawat-jalan/poli-ortopedi', [OutpacientController::class, 'showOrthopedyPoly'])->name('orthopedy');
+Route::get('/pelayanan/rawat-jalan/poli-paru', [OutpacientController::class, 'showLungsPoly'])->name('lungs');
 Route::get('/pelayanan/rawat-jalan/poli-gigi', [OutpacientController::class, 'showToothPoly'])->name('tooth');
+Route::get('/pelayanan/rawat-jalan/poli-interna', [OutpacientController::class, 'showInternalPoly'])->name('internal');
 Route::get('/pelayanan/rawat-inap', [ServicesController::class, 'showInpacient'])->name('inpacient');
 Route::get('/pelayanan/penunjang', [ServicesController::class, 'showSupport'])->name('support');
 Route::get('/pasien/', [PatientInformationsController::class, 'showPatientInformations'])->name('patientInformations');

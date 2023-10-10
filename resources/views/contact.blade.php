@@ -25,7 +25,7 @@
                     class="order-2 h-[505px] w-full rounded-xl shadow-xl md:order-1 md:w-[50%] lg:w-[65%]"
                     data-aos="zoom-in-up"></iframe>
 
-                <div class="order-1 mb-9 h-[505px] w-full rounded-xl bg-slate-100 p-3 shadow-xl md:order-2 md:mb-0 md:w-[45%] lg:w-[30%]"
+                <div class="order-1 mb-9 h-fit w-full rounded-xl bg-slate-100 p-3 shadow-xl md:order-2 md:mb-0 md:w-[45%] lg:w-[30%]"
                     data-aos="zoom-in-up">
                     <div class="overflow-hidden rounded-md">
                         <img src="img/rsbk.jpg" alt="example"

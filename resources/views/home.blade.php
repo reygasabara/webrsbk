@@ -61,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="group relative mb-6 flex h-64 items-center justify-center overflow-hidden rounded-md shadow-md transition-shadow duration-200 hover:shadow-xl hover:shadow-black/30 md:mb-0 md:w-[30%] lg:w-[20%]"
+            <div class="group relative mb-6 flex h-64 w-96 items-center justify-center overflow-hidden rounded-md shadow-md transition-shadow duration-200 hover:shadow-xl hover:shadow-black/30 md:mb-0 md:w-[30%] lg:w-[20%]"
                 data-aos="zoom-in-down">
                 <img src="{{ asset('img/ranap.jpg') }}" alt="Gambar"
                     class="h-full w-full object-cover transition-transform group-hover:rotate-3 group-hover:scale-125">

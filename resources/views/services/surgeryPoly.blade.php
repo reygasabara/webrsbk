@@ -10,7 +10,7 @@
 
     <section class="mx-6 mb-12 md:mx-12">
         <div class="">
-            <p class="text-justify">Poli bedah umum adalah layanan kesehatan yang mengani pengobatan penyakit dan luka.</p>
+            <p class="text-justify">Poli bedah umum adalah layanan kesehatan yang menangani pengobatan penyakit dan luka.</p>
 
             <div class="relative mt-16 w-[89%] bg-green-300/30 px-5 py-5 md:w-[95%] lg:w-[97%]">
                 <p class="relative z-40 font-bold">Pelayanan unggulan poli bedah umum</p>

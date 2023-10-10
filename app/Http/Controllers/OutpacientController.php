@@ -90,8 +90,22 @@ class OutpacientController extends Controller
         ]);
     }
 
+    public function showLungsPoly() {
+        return view('services.lungsPoly', [
+            'title'=> 'Pelayanan',
+            'submenu' => 'Rawat Jalan',
+        ]);
+    }
+
     public function showToothPoly() {
         return view('services.toothPoly', [
+            'title'=> 'Pelayanan',
+            'submenu' => 'Rawat Jalan',
+        ]);
+    }
+
+    public function showInternalPoly() {
+        return view('services.internalPoly', [
             'title'=> 'Pelayanan',
             'submenu' => 'Rawat Jalan',
         ]);
