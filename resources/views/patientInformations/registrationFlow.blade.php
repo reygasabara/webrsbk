@@ -16,11 +16,11 @@
         </div>
 
         <h3 class="mb-3 ml-[5%] text-xs font-bold md:mb-7 md:text-sm lg:ml-[15%] lg:text-base">1. Pasien Umum</h3>
-        <img src="{{ asset('img/alurumum.png') }}" alt="alur umum" class="mx-auto px-7 md:px-0">
+        <img src="{{ asset('img/alurumum.png') }}" alt="alur umum" class="mx-auto w-[700px] px-7">
 
         <h3 class="mb-3 ml-[5%] mt-10 text-xs font-bold md:mb-7 md:mt-12 md:text-sm lg:ml-[15%] lg:text-base">2. Pasien BPJS
         </h3>
-        <img src="{{ asset('img/alurumum.png') }}" alt="alur umum" class="mx-auto px-7 md:px-0">
+        <img src="{{ asset('img/alurbpjs.png') }}" alt="alur umum" class="mx-auto px-7 md:px-0">
         </div>
     </section>
 
