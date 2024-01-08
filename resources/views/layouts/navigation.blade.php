@@ -88,7 +88,7 @@
                                 Dokter</a>
                         </li>
                         <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
-                            <a href="{{ route('bedInformation') }}"
+                            <a href="https://rsbkendari.id:8085/webapps/bed5.php"
                                 class="{{ $submenu === 'Informasi Tempat Tidur' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700">Informasi
                                 Tempat Tidur</a>
                         </li>
@@ -267,7 +267,7 @@
                         Dokter</a>
                 </li>
                 <li class="border-y-2 border-y-white leading-7 hover:border-y-yellow-700 hover:text-yellow-500">
-                    <a href="{{ route('bedInformation') }}"
+                    <a href="https://rsbkendari.id:8085/webapps/bed5.php"
                         class="{{ $submenu === 'Informasi Tempat Tidur' ? 'text-yellow-600 font-bold' : '' }} block active:text-yellow-700"><i
                             class="fa-solid fa-angle-right"></i> Informasi
                         Tempat Tidur</a>
