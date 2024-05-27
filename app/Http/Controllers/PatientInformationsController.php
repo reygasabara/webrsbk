@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\JadwalDokter;
 use Illuminate\Http\Request;
 
 class PatientInformationsController extends Controller
@@ -14,9 +15,11 @@ class PatientInformationsController extends Controller
     }
 
     public function showDoctorSchedule() {
+        $jadwal = JadwalDokter::all();
         return view('patientInformations.doctorSchedule', [
             'title'=> 'Informasi Pasien',
             'submenu' => 'Jadwal Dokter',
+            'jadwal' => $jadwal,
         ]);
     }
 

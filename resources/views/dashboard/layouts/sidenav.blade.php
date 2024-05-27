@@ -28,6 +28,13 @@
                     Post
                 </a>
             </li>
+            <li class="mb-2">
+                <a href="{{ url('dashboard/jadwal-dokter') }}"
+                    class="{{ Request::is('dashboard/jadwal-dokter*') ? 'text-yellow-400' : '' }} flex h-full w-full items-center rounded-md px-3 py-1 duration-200 hover:bg-slate-400 hover:text-slate-100 active:bg-slate-500">
+                    <i class="bx bxs-news mr-4"></i>
+                    Jadwal Dokter
+                </a>
+            </li>
         </ul>
 
         <ul class="">

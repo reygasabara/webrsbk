@@ -52,9 +52,8 @@
                     <h1 class="mb-2 text-xl font-bold text-white group-hover:-translate-y-7 md:text-2xl">Rawat Jalan</h1>
                     <p
                         class="mb-9 text-xs italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Lorem
-                        ipsum dolor, sit amet
-                        consectetur adipisicing elit dier jighe skels jgeot.</p>
+                        Layanan medis di mana pasien menerima diagnosis, pengobatan, atau perawatan tanpa perlu menginap.
+                    </p>
                     <button
                         class="rounded-full bg-yellow-500 px-3.5 py-2 text-sm capitalize text-white shadow shadow-black/60 duration-300 hover:scale-110 hover:bg-yellow-600 active:bg-yellow-700"><a
                             href="{{ route('outpacient') }}">Lihat</a></button>
@@ -74,10 +73,9 @@
                         class="fa-solid fa-bed-pulse mb-3 w-full text-center text-5xl text-white duration-200 group-hover:-translate-y-24"></i>
                     <h1 class="mb-2 text-xl font-bold text-white group-hover:-translate-y-7 md:text-2xl">Rawat Inap</h1>
                     <p
-                        class="mb-9 text-xs italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Lorem
-                        ipsum dolor, sit amet
-                        consectetur adipisicing elit dier jighe skels jgeot.</p>
+                        class="mb-5 text-xs italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        Layanan medis di mana pasien dirawat untuk pemantauan, diagnosis, atau pengobatan
+                        yang memerlukan pengawasan intensif dan perawatan jangka panjang.</p>
                     <button
                         class="rounded-full bg-yellow-500 px-3.5 py-2 text-sm capitalize text-white shadow shadow-black/60 duration-300 hover:scale-110 hover:bg-yellow-600 active:bg-yellow-700"><a
                             href="{{ route('inpacient') }}">Lihat</a></button>
@@ -98,9 +96,7 @@
                     <h1 class="mb-2 text-xl font-bold text-white group-hover:-translate-y-7 md:text-2xl">Penunjang</h1>
                     <p
                         class="mb-9 text-xs italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        Lorem
-                        ipsum dolor, sit amet
-                        consectetur adipisicing elit dier jighe skels jgeot.</p>
+                        Fasilitas tambahan yang mendukung diagnosis dan pengobatan</p>
                     <button
                         class="rounded-full bg-yellow-500 px-3.5 py-2 text-sm capitalize text-white shadow shadow-black/60 duration-300 hover:scale-110 hover:bg-yellow-600 active:bg-yellow-700"><a
                             href="{{ route('support') }}">Lihat</a></button>

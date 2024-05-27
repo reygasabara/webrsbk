@@ -9,6 +9,7 @@ use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OutpacientController;
+use App\Http\Controllers\JadwalDokterController;
 use App\Http\Controllers\PublicInformationsController;
 use App\Http\Controllers\PatientInformationsController;
 
@@ -80,4 +81,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/post/checkSlug', [PostController::class, 'checkSlug']);
     Route::resource('/dashboard/post', PostController::class);
+    Route::resource('/dashboard/jadwal-dokter', JadwalDokterController::class);
+    Route::delete('/dashboard/jadwal-dokter', [PostController::class, 'checkSlug']);
 });
